@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5e2e;&#x52a9;</span><TD>assistance; aid; to help; to assist<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x5e03;&#x5a03;&#x5a03;</span><TD>rag doll<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x5f69;&#x8272;&#x7b14;</span><TD>colour pencil<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x5bb3;&#x6015;</span><TD>to be afraid; to be scared<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x597d;&#x670b;&#x53cb;</span><TD>good friend; (slang) a visit from Aunt Flo (menstrual period)<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x548c;&#x597d;</span><TD>to become reconciled<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x4eae;&#x6676;&#x6676;</span><TD>shiny; twinkle<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x6f02;&#x4eae;</span><TD>pretty; beautiful<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x5bb9;&#x6613;</span><TD>easy; likely; liable (to)<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x68ee;&#x6797;</span><TD>forest<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x4f24;&#x5fc3;</span><TD>to grieve; to be broken-hearted; to feel deeply hurt<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x751f;&#x6c14;</span><TD>to get angry; to take offense; angry; vitality; liveliness<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x6c34;&#x5f69;</span><TD>watercolor<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x6c34;&#x5f69;&#x7b14;</span><TD>watercolor brush<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x540c;&#x73ed;</span><TD>to be in the same class; to be in the same squad; classmate<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x5a03;&#x5a03;</span><TD>baby; small child; doll<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5f2f;&#x5f2f;</span><TD>curved; not straight<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x4e3a;&#x4ec0;&#x4e48;</span><TD>why?; for what reason?<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x76f8;&#x4eb2;&#x76f8;&#x7231;</span><TD>to be kind and love one another (idiom); bound by deep emotions<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x7b11;&#x563b;&#x563b;</span><TD>grinning; smile happily<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x661f;&#x661f;</span><TD>star in the sky<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x600e;&#x4e48;&#x4e86;</span><TD>What&#x0027s up?; What&#x0027s going on?; What happened?<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x4e89;&#x5435;</span><TD>dispute; strife<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x4eb2;</span><TD>dear; intimate; kiss; parent; relative; marriage; in persion<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x52a9;</span><TD>help; assist<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x4e89;</span><TD>compete; contend; strive; dispute<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x5435;</span><TD>quarrel; brawl; talk loudly; noisy<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x62a2;</span><TD>grab; rob<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x4f24;</span><TD>injury; hurt<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x96be;</span><TD>difficult<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q30>&#x96be;</span><TD>difficulty; disaster<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x5bb9;</span><TD>contain; hold; tolerate; allow; looks; appearance<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x6613;</span><TD>to change; to exchange; easy<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x5a03;</span><TD>child<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x80fd;</span><TD>ability; can; energy<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x5f2f;</span><TD>bend; curve; turn<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x6676;</span><TD>quartz; crystal; brilliant; glittering<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x68ee;</span><TD>full of trees; forest; dark; gloomy; majestic<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x6f02;</span><TD>float; drift<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q38>&#x6f02;</span><TD>pretty; sleek<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q38>&#x6f02;</span><TD>bleach<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x5f69;</span><TD>varicolored silk; colorful; lucky; praise<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x6bd4;</span><TD>to compare; ratio; than; to gesture<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x52a0;</span><TD>add; increase<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x6865;</span><TD>bridge<TD><img src=sound.png onclick=listen('q42')></A></Table></body></html>

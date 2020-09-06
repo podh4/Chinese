@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5371;&#x9669;</span><TD>danger; dangerous<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x9075;&#x5b88;</span><TD>to comply with; to abide by; to respect (an agreement)<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x4ea4;&#x901a;</span><TD>to be connected; traffic; transportation; communications; liaison<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x89c4;&#x5219;</span><TD>rule; regulation; rules and regulations<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x8f66;&#x7978;</span><TD>traffic accident; car crash<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x6307;&#x6325;</span><TD>to conduct; to command; to direct; conductor (of an orchestra)<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x5de8;&#x5927;</span><TD>huge; immense; very large; tremendous; gigantic; enormous<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x5230;&#x8fbe;</span><TD>to reach; to arrive<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x987a;&#x5229;</span><TD>smoothly; without a hitch<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x91c7;&#x8bbf;</span><TD>to interview; to gather news; to hunt for and collect; to cover<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x6807;&#x9898;</span><TD>title; heading; headline; caption; subject<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x89c1;&#x4e49;&#x52c7;&#x4e3a;</span><TD>to see what is right and act courageously (idiom, from Analects); to stand up bravely for the truth; acting heroically in a just cause<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x83b7;&#x5f97;</span><TD>to obtain; to receive; to get<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x8868;&#x626c;</span><TD>to praise; to commend<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x5371;</span><TD>danger; dying; high<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x9669;</span><TD>danger; risk; nearly; rugged and rough<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x9075;</span><TD>follow the direction; abide by; obey<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x5b88;</span><TD>duty; principle; keep; guard; defend<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x901a;</span><TD>through; connect; understand<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x89c4;</span><TD>rule; regulation; compasses; advise; plan<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x5219;</span><TD>standard; criterion; regulation; and; so<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x7978;</span><TD>disaster; misfortune; ruin<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x53e6;</span><TD>other; else; separate<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x6325;</span><TD>to wave; brandish; wipe off; disperse<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x5de8;</span><TD>huge; big<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x56f0;</span><TD>deserted house; poor; difficulty; tired; sleepy; surround<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x8fbe;</span><TD>to reach (a place or level); express; to realize<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x987a;</span><TD>along; following; obey; in order<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x8840;</span><TD>blood<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q29>&#x8840;</span><TD>blood<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x8bbf;</span><TD>visit; call on; search for<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x6807;</span><TD>mark; label; sign; bid<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x4e49;</span><TD>justice; righteous; meaning<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x83b7;</span><TD>capture; catch; obtain; win<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x626c;</span><TD>lift; raise; spread<TD><img src=sound.png onclick=listen('q34')></A></Table></body></html>

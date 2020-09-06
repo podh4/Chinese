@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5c0f;&#x718a;</span><TD>little bear<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x9f3b;&#x5b50;</span><TD>nose<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x529e;&#x6cd5;</span><TD>means; method; way (of doing sth)<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x7af9;&#x7aff;</span><TD>bamboo pole<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x53e4;&#x65f6;&#x5019;</span><TD>in ancient times; in olden days<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x4e0b;&#x6c89;</span><TD>to sink down<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x91cd;&#x91cf;</span><TD>weight<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x795e;&#x7ae5;</span><TD>child prodigy<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x718a;</span><TD>a bear<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x9f3b;</span><TD>nose<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x6551;</span><TD>prohibit; rescue; save<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x6cd5;</span><TD>method; law; France<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x7af9;</span><TD>bamboo<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x5f80;</span><TD>go toward; past<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x5347;</span><TD>liter; rise; ascend; promote<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x79f0;</span><TD>a weighing machine; a steelyard<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q16>&#x79f0;</span><TD>to weigh; to state; to name<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x53e4;</span><TD>ancient times; ancient; very old<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x5b98;</span><TD>officer; goverment official<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x5899;</span><TD>wall<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x6c89;</span><TD>to sink; heavy; persistent and lasting<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x88c5;</span><TD>dress; clothes; install; fill in; load; act<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x91cf;</span><TD>quantity; amount; to estimate<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q22>&#x91cf;</span><TD>to measure<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x5938;</span><TD>boast; exaggerate; praise<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x795e;</span><TD>spirit; clever<TD><img src=sound.png onclick=listen('q24')></A></Table></body></html>

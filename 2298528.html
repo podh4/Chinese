@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5355;&#x72ec;</span><TD>alone; by oneself; on one&#x0027s own<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x9632;&#x6b62;</span><TD>to prevent; to guard against; to take precautions<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x611f;&#x5230;</span><TD>to feel; to sense; to have the feeling that; to think that; to move; to affect<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x8d35;&#x91cd;</span><TD>precious<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x6b22;&#x8fce;&#x4f1a;</span><TD>welcome party<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x9ec4;&#x660f;</span><TD>dusk; evening; nightfall<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x96c6;&#x5408;</span><TD>to gather; to assemble; set (mathematics)<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x7b80;&#x5355;</span><TD>simple; not complicated<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x7981;&#x6b62;</span><TD>to prohibit; to forbid; to ban<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x7ade;&#x8d5b;</span><TD>race; competition<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x72fc;&#x541e;&#x864e;&#x54bd;</span><TD>to wolf down one&#x0027s food (idiom); to devour ravenously; to gorge oneself<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x9732;&#x8425;</span><TD>to camp out; camping<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x5185;&#x88e4;</span><TD>underpants; panties; briefs<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x6392;&#x9aa8;</span><TD>pork chop; pork cutlet; spare ribs<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x914d;&#x5408;</span><TD>matching; fitting in with; compatible with; to correspond; to fit; to conform to; rapport; to coordinate with; to act in concert with; to cooperate; to become man and wife; to combine parts of machine<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x9f50;&#x5fc3;&#x534f;&#x529b;</span><TD>to work with a common purpose (idiom); to make concerted efforts; to pull together; to work as one<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x624b;&#x7535;&#x7b52;</span><TD>flashlight; electric hand torch<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x63a2;&#x9669;</span><TD>to explore; to go on an expedition; adventure<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x62d6;&#x978b;</span><TD>slippers; sandals; flip-flops<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x889c;&#x5b50;</span><TD>socks; stockings<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x6447;&#x6446;</span><TD>to sway; to wobble; to waver<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6930;&#x6811;</span><TD>coconut tree<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x9732;</span><TD>dew; to expose<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q23>&#x9732;</span><TD>to appear; to show<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x8425;</span><TD>camp; battalion; operate; seek for<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x63a2;</span><TD>detect; investigate; visit<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x889c;</span><TD>socks; stockings<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x7b52;</span><TD>a section of thick bamboo; tube-shaped object<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x6b62;</span><TD>stop; cease; until; merely<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x72ec;</span><TD>single; alone; only<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x7981;</span><TD>forbid; ban<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q30>&#x7981;</span><TD>endure; bear; withstand<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x8d35;</span><TD>costly; expensive; valuable; honored; noble; your<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x7ade;</span><TD>compete; contest<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x7ed1;</span><TD>tie; bind<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x534f;</span><TD>mediat; assist; abey; joint; agree<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x914d;</span><TD>to match; to mate; be qualified; to combine<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x54bd;</span><TD>throat; pharynx<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q36>&#x54bd;</span><TD>swallow<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q36>&#x54bd;</span><TD>choked; sob<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x987f;</span><TD>kowtow; (of foot) stamp; pause; suddenly; settle; tired; time<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x9aa8;</span><TD>bone<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q38>&#x9aa8;</span><TD>follicle; flowerbud<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x6930;</span><TD>coconut palm; coco<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x660f;</span><TD>dusk; dim; confused; faint<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x96c6;</span><TD>perch; gather; assemble; volumn<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x8fce;</span><TD>to meet; to face; receive or greet; pander to<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x88e4;</span><TD>pants; trousers<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x978b;</span><TD>shoe<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x5355;</span><TD>single; a slip of paper<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q45>&#x5355;</span><TD>the chief of the Huns<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q45>&#x5355;</span><TD>a family name<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x8d5b;</span><TD>contest; competition; match; comparable<TD><img src=sound.png onclick=listen('q46')></A><TR><TD><span  class=span-class id=q47>&#x7b80;</span><TD>simple; brief; bamboo slips for writing on<TD><img src=sound.png onclick=listen('q47')></A><TR><TD><span  class=span-class id=q48>&#x8f6e;</span><TD>wheel; wheel shaped; steamer; a round; a turn<TD><img src=sound.png onclick=listen('q48')></A><TR><TD><span  class=span-class id=q49>&#x64e6;</span><TD>wipe; rub; scrub; erase<TD><img src=sound.png onclick=listen('q49')></A><TR><TD><span  class=span-class id=q50>&#x6446;</span><TD>put; place; lay bare; put on<TD><img src=sound.png onclick=listen('q50')></A><TR><TD><span  class=span-class id=q51>&#x611f;</span><TD>feel; sense; move or touch<TD><img src=sound.png onclick=listen('q51')></A></Table></body></html>

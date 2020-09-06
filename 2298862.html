@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5730;&#x5740;</span><TD>address<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x75d8;&#x75d8;</span><TD>Acne<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x5632;&#x7b11;</span><TD>to jeer at; to deride; to ridicule; mockery; derision<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x9690;&#x5f62;&#x773c;&#x955c;</span><TD>contact lens<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x4e0a;&#x763e;</span><TD>to get into a habit; to become addicted<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x63a7;&#x5236;</span><TD>control; to exercise control over; to contain<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x5520;&#x53e8;</span><TD>to prattle; to chatter; talkative; garrulous; to nag<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x906e;&#x4f4f;</span><TD>to cover (up); to block; to obstruct; to shade<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x5939;&#x8d77;</span><TD>Pick up<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x6076;&#x4f5c;&#x5267;</span><TD>mischief; mischievous; practical joke; prank<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x519c;&#x592b;</span><TD>peasant; farmer<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x60ed;&#x6127;</span><TD>ashamed<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x611f;&#x6069;</span><TD>thanksgiving<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x62e5;&#x6709;</span><TD>to have; to possess<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x70ed;&#x7ebf;</span><TD>hotline (communications link)<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x8ba8;&#x538c;</span><TD>to dislike; to loathe; disagreeable; troublesome; annoying<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x6bd4;&#x8f83;</span><TD>to compare; to contrast; comparatively; relatively; quite; comparison<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x5740;</span><TD>site, location, land for house<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x75d8;</span><TD>pock; blain; pox<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x5632;</span><TD>ridicule; deride<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x9690;</span><TD>hide; concealed; latent; secretly<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x763e;</span><TD>rash; addiction, craving, habit<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x63a7;</span><TD>control; accuse; draw a bow<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x5520;</span><TD>chat, jaw, gossip, talk<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x53e8;</span><TD>talkative; fond of talking<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q25>&#x53e8;</span><TD>get the benefit<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x906e;</span><TD>block; hide; cover<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x5939;</span><TD>to clip; a clip<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q27>&#x5939;</span><TD>double-layered; lined<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x6076;</span><TD>evil; badness<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q28>&#x6076;</span><TD>feel sick; disgusting<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q28>&#x6076;</span><TD>hate; dislike<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q28>&#x6076;</span><TD>ashemed<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x8170;</span><TD>waist; kidney<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x9178;</span><TD>sour; acid; muscular pain<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x519c;</span><TD>agriculture; farming; peasant<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x60ed;</span><TD>feel ashamed<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x6127;</span><TD>ashamed<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x6069;</span><TD>favor; benevolence<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x62e5;</span><TD>embrace; crowd; support<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x7ebf;</span><TD>thread; string; wire; line; route; clue<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x538c;</span><TD>detest; be bored of<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x8f83;</span><TD>compare; comparatively more<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x6234;</span><TD>to wear (hat, etc)<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x955c;</span><TD>mirror; lens; looking glass<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x6bb5;</span><TD>section; segment; paragraph<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x5237;</span><TD>brush<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x73cd;</span><TD>treasure; valuable; precious; rare<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x60dc;</span><TD>cherish; spare; pity<TD><img src=sound.png onclick=listen('q44')></A></Table></body></html>

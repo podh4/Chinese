@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x79d1;&#x5b66;</span><TD>science; scientific knowledge; scientific<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x5c06;&#x6765;</span><TD>in the future; future; the future<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x53f8;&#x673a;</span><TD>chauffeur; driver<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x5e0c;&#x671b;</span><TD>to wish for; to desire; hope<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x519b;&#x4eba;</span><TD>serviceman; soldier; military personnel<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x4fdd;&#x536b;</span><TD>to defend; to safeguard<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x7ec3;&#x4e60;</span><TD>exercise; drill; practice<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x52aa;&#x529b;</span><TD>great effort; to strive; to try hard<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x613f;&#x671b;</span><TD>desire; wish<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x5b9e;&#x73b0;</span><TD>to achieve; to implement; to realize; to bring about<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x590d;&#x4e60;</span><TD>to revise; to review; revision<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x4e89;&#x53d6;</span><TD>to fight for; to strive for; to win over<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x4e3e;&#x624b;</span><TD>to raise a hand; to put up one&#x0027s hand (as signal)<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x79d1;</span><TD>an academic discipline; a subject; a family (Biology)<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x5c06;</span><TD>shall; to use<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q15>&#x5c06;</span><TD>a general<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x5f53;</span><TD>equal; to serve as; in the presence of<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q16>&#x5f53;</span><TD>proper; to regard as; pawn<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x53f8;</span><TD>in charge of; department under a ministry<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x5e0c;</span><TD>rare; hope; very<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x671b;</span><TD>look afar; hope; look over; reputation; visit<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x519b;</span><TD>army; military<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x536b;</span><TD>defend; guard; protect<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x7ec3;</span><TD>practise; white silk; boil raw silk<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x52aa;</span><TD>exert; strive; bulge<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x613f;</span><TD>desire; wish; willing to<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x5b9e;</span><TD>filled; true; fruit; solid; firm<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x7bc7;</span><TD>piece of writing; sheet of paper; chapter<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x590d;</span><TD>comeback; repeat; return; reply; complex<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x53d6;</span><TD>take; select<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x4e3e;</span><TD>lift up; recommend; whole<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x7ffb;</span><TD>flip; turn over; cross; translate<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x9875;</span><TD>page; sheet; leaf of paper<TD><img src=sound.png onclick=listen('q31')></A></Table></body></html>

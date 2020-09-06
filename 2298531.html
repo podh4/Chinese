@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5305;&#x88c5;</span><TD>to pack; to package; to wrap; packaging<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x997c;&#x5e72;</span><TD>biscuit; cracker; cookie<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x6101;&#x7709;&#x82e6;&#x8138;</span><TD>frowning and worried (idiom); showing concern<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x6751;&#x5b50;</span><TD>village<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x5b58;&#x653e;</span><TD>to deposit; to leave in sb&#x0027s care<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x86cb;&#x7cd5;</span><TD>cake<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x9152;&#x7c7b;</span><TD>alcohol<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x51b7;&#x51bb;&#x5ba4;</span><TD>freezer<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x804a;&#x5929;</span><TD>to chat; to gossip<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x5947;&#x602a;</span><TD>strange; odd; to marvel; to be baffled<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x7f3a;&#x5c11;</span><TD>lack; shortage of; shortfall; to be short (of); to lack<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x8089;&#x7c7b;</span><TD>meat<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x70e7;&#x6c34;</span><TD>to heat water; to boil water<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x9002;&#x5408;</span><TD>to fit; to suit<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x852c;&#x83dc;</span><TD>vegetables; produce<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x6c34;&#x997a;</span><TD>boiled dumpling<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x65b0;&#x9c9c;</span><TD>fresh (experience, food etc); freshness; novel; uncommon<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x6709;&#x6548;&#x671f;</span><TD>period of validity; sell-by date<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x6109;&#x5feb;</span><TD>cheerful; cheerily; delightful; pleasant; pleasantly; pleasing; happy; delighted<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x8f6c;&#x8eab;</span><TD>(of a person) to turn round; to face about; (of a widow) to remarry (archaic)<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x81ea;&#x79c1;</span><TD>selfish; selfishness<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6350;</span><TD>tax; abandon; contribute; donate<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x6548;</span><TD>result, effect; effectiveness<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x7c7b;</span><TD>a type; a category<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x5b58;</span><TD>keep; retain; store; exist<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x51bb;</span><TD>freeze; jelly<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x852c;</span><TD>vegetables; greens<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x997a;</span><TD>stuffed dumplings<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x9152;</span><TD>wine<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x6751;</span><TD>village<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x79c1;</span><TD>private; personal; selfish<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x4e95;</span><TD>a well<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x6101;</span><TD>worry; hate; gloomy; distressed<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x6492;</span><TD>let go; let out; release<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x6367;</span><TD>hold in both hands<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x7f3a;</span><TD>lack; be short of; defect; job vacancy<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x6109;</span><TD>pleased; cheerful; happy<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x804a;</span><TD>a little; just; merely; chat<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x88c5;</span><TD>dress; clothes; install; fill in; load; act<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x9c9c;</span><TD>fresh; delicious; bright<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q40>&#x9c9c;</span><TD>rare<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x9002;</span><TD>fit; suitable<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x7cd5;</span><TD>cake<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x997c;</span><TD>cakes; biscuits<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x716e;</span><TD>boil; cook with water<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x70e7;</span><TD>burn; cook; heat up; fever; grill<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x602a;</span><TD>strange; monster; blame; quite<TD><img src=sound.png onclick=listen('q46')></A><TR><TD><span  class=span-class id=q47>&#x751c;</span><TD>sweet<TD><img src=sound.png onclick=listen('q47')></A><TR><TD><span  class=span-class id=q48>&#x8f6c;</span><TD>turn; roll; change<TD><img src=sound.png onclick=listen('q48')></A><TR><TD><span  class=span-class id=q48>&#x8f6c;</span><TD>rotate<TD><img src=sound.png onclick=listen('q48')></A><TR><TD><span  class=span-class id=q49>&#x5e78;</span><TD>good luck; lucky; fortunate<TD><img src=sound.png onclick=listen('q49')></A><TR><TD><span  class=span-class id=q50>&#x798f;</span><TD>good fortune; happiness<TD><img src=sound.png onclick=listen('q50')></A></Table></body></html>

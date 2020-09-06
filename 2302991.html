@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5de6;&#x601d;&#x53f3;&#x60f3;</span><TD>to turn over in one&#x0027s mind (idiom); to think through from different angles; to ponder<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x51fa;&#x79df;</span><TD>to rent<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x7edd;&#x5bf9;</span><TD>absolute; unconditional<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x8d2d;&#x4e70;</span><TD>to purchase; to buy<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x7535;&#x529b;</span><TD>electrical power; electricity<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x5408;&#x7ea6;</span><TD>treaty; contract<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x5e7b;&#x60f3;</span><TD>delusion; fantasy<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x6280;&#x672f;</span><TD>technology; technique; skill<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x82e6;&#x607c;</span><TD>vexed; distressed<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x6572;&#x6253;</span><TD>to beat sb; to beat (a drum)<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x77a7;&#x89c1;</span><TD>to see<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x5168;&#x65b0;</span><TD>all new; completely new<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x65e5;&#x51fa;</span><TD>sunrise<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x65e5;&#x843d;</span><TD>sundown; sunset<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x56db;&#x9762;&#x516b;&#x65b9;</span><TD>in all directions; all around; far and near<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x592a;&#x7a7a;&#x8239;</span><TD>spaceship<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x592a;&#x7a7a;&#x884c;&#x8d70;</span><TD>spacewalk<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x7279;&#x5236;</span><TD>special; unique<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x5fc3;&#x6ee1;&#x610f;&#x8db3;</span><TD>perfectly contented (idiom); perfectly satisfied<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x91cd;&#x529b;</span><TD>gravity<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x81ea;&#x52a8;</span><TD>automatic; voluntarily<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x5634;&#x89d2;</span><TD>corner of the mouth<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x62a4;&#x7f69;</span><TD>shield<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x505c;&#x8f66;&#x4f4d;</span><TD>a parking space<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x592a;&#x7a7a;&#x88c5;</span><TD>space suit<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x65e5;&#x51fa;&#x65e5;&#x843d;</span><TD>sunrise and sunset<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x63a7;&#x5236;&#x9762;&#x677f;</span><TD>control panel<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x7f69;</span><TD>basket for catching fish; cover<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x906d;</span><TD>meet with; suffer; round<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x6280;</span><TD>skill; ability<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x641c;</span><TD>search, seek; investigate<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x7d22;</span><TD>large rope, cable; rules, laws; to demand, to exact; to search, inquire; isolated<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x5835;</span><TD>obstruct; block up; stifled<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x822a;</span><TD>navigate; voyage; boat; ship<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x5e7b;</span><TD>illusory; magical<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x6e90;</span><TD>fountainhead; the cause; source<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x7816;</span><TD>brick<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x54a6;</span><TD>well; why<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x5389;</span><TD>strict; stern; severe; harsh<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x77a7;</span><TD>look; see; glance<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x8651;</span><TD>consider<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x7aef;</span><TD>end; extrenity; upright; to hold (as to a plate)<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x80c0;</span><TD>swell, inflate, expand<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x4e1d;</span><TD>silk; thread<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x8361;</span><TD>clear away; loaf; sway; swing<TD><img src=sound.png onclick=listen('q45')></A></Table></body></html>

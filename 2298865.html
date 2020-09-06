@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x8bb0;&#x5f55;</span><TD>to record; record (written account); record (in sports etc)<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x6784;&#x6210;</span><TD>to constitute; to form; to compose; to make up; to configure (computing)<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x5386;&#x53f2;</span><TD>history<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x7532;&#x9aa8;&#x6587;</span><TD>oracle script; oracle bone inscriptions (an early form of Chinese script)<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x4ea7;&#x751f;</span><TD>to arise; to come into being; to come about; to give rise to; to bring into being; to bring about; to produce; to engender; to generate; to appear; appearance; emergence; generation; production; yield<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x5305;&#x62ec;</span><TD>to comprise; to include; to involve; to incorporate; to consist of<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x6839;&#x636e;</span><TD>according to; based on; basis; foundation<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x7edf;&#x8ba1;</span><TD>statistics; to count; to add up<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x4e0d;&#x4ec5;</span><TD>not only (this one); not just (...) but also<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x6000;&#x7591;</span><TD>to doubt; to suspect; doubt; suspicion; skeptical<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x604d;&#x7136;&#x5927;&#x609f;</span><TD>to suddenly realize; to suddenly see the light<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x9aa8;&#x5934;</span><TD>bone; moral character; bitterness<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x4f18;&#x7f8e;</span><TD>graceful; fine; elegant<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x827a;&#x672f;</span><TD>art<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x5b98;&#x5458;</span><TD>official (in an organization or government); administrator<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x80af;&#x5b9a;</span><TD>to be sure; to be certain; sure; certain; definite; to confirm; to affirm; affirmative; to approve; approval; recognition<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5f55;</span><TD>record; adopt<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x6784;</span><TD>compose; construct; form; make<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x5386;</span><TD>go through; experience; previous; calendar<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x53f2;</span><TD>history<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x7532;</span><TD>first; shell; armor<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x4ea7;</span><TD>give birth to; produce; product<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x62ec;</span><TD>tie; to contract; include<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x636e;</span><TD>according to; evidence; occupy<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q24>&#x636e;</span><TD>short of money; stiff joints in the hand<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x7edf;</span><TD>principle; system; unite; administer; together<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x4ebf;</span><TD>hundred million; many<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x4e59;</span><TD>second<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x4ec5;</span><TD>just; merely; only; simply<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x53f9;</span><TD>sigh; praise; chant<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x58a8;</span><TD>ink; Chinese ink; ink; black<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x7a84;</span><TD>narrow<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x6000;</span><TD>bosom; mind; pregnant; keep in mind<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x7591;</span><TD>doubt; suspicious; query<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x6d3e;</span><TD>branch of river; send; group<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x604d;</span><TD>suddenly; seem; as if<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x609f;</span><TD>realize; enlighten<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x9aa8;</span><TD>bone<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q37>&#x9aa8;</span><TD>follicle; flowerbud<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x4f18;</span><TD>excellent; actor or actress<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x827a;</span><TD>skill; art<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x5b98;</span><TD>officer; goverment official<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x80af;</span><TD>meat attached to bone; willing to<TD><img src=sound.png onclick=listen('q41')></A></Table></body></html>

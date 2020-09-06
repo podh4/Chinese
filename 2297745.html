@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x8868;&#x6f14;</span><TD>play; show; performance; exhibition; to perform; to act; to demonstrate<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x5230;&#x4e86;</span><TD>at last; finally; in the end<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x7ea2;&#x5305;</span><TD>lit. money wrapped in red as a gift; a bonus payment; a kickback; a bribe<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x9e21;&#x86cb;</span><TD>(chicken) egg; hen&#x0027s egg<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x63a5;&#x8fc7;</span><TD>took; received<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x770b;&#x4e86;</span><TD>read; seen<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x8bfe;&#x8868;</span><TD>school timetable<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x62ff;&#x7740;</span><TD>holding<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x5e74;&#x82b1;</span><TD>new year flower<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x60a8;&#x597d;</span><TD>hello (polite)<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x8089;&#x5e72;</span><TD>dried meat<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x65f6;&#x5019;</span><TD>time; length of time; moment; period<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x65f6;&#x95f4;</span><TD>time; period<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x8c22;&#x8c22;</span><TD>to thank; thanks; thank you<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x65b0;&#x5e74;</span><TD>New Year<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x5b66;&#x4e1a;</span><TD>studies; schoolwork<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x505a;&#x4e86;</span><TD>done<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x65b0;</span><TD>new; fresh; newly<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x65f6;</span><TD>time; hour; now and then<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x9f99;</span><TD>dragon<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x8868;</span><TD>surface; show; table; meter; watch<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6f14;</span><TD>flow; extend; evolve; deduce; perform; practise<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x5019;</span><TD>wait for; time; season; reconnoitre; observe; attend to<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x5f20;</span><TD>stretch; spread; expand; exaggerate; a sheet of<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x5361;</span><TD>wedge; get stuck; clip; checkpoint; card; calorie<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x7740;</span><TD>particle for continuous tense or status<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q26>&#x7740;</span><TD>to touch; to use; to feel; catch<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q26>&#x7740;</span><TD>a move in chess; action<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q26>&#x7740;</span><TD>to wear; clothing<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x60a8;</span><TD>you (respectfully)<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x7ed9;</span><TD>to give; for<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q28>&#x7ed9;</span><TD>to supply<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x5c81;</span><TD>year of age<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x4e1a;</span><TD>work; business; employment; estate; already<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x63a5;</span><TD>receive; connect; continuous<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x8c22;</span><TD>thank; apologize; refuse<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x86cb;</span><TD>egg<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x554a;</span><TD>ah; oh<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x8bf4;</span><TD>say; theory<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q35>&#x8bf4;</span><TD>persuade<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x795d;</span><TD>wish<TD><img src=sound.png onclick=listen('q36')></A></Table></body></html>

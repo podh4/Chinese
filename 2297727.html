@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x54e5;&#x54e5;</span><TD>older brother<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x6cb3;&#x9a6c;</span><TD>hippopotamus<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x51e0;&#x4e2a;</span><TD>a few; several; how many<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x53ef;&#x4ee5;</span><TD>can; may; possible; able to<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x8d77;&#x7acb;</span><TD>to stand; Stand up!<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x6cb3;</span><TD>river<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x54ed;</span><TD>cry; weep; in tears<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x6d17;</span><TD>wash<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x559d;</span><TD>to drink<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q9>&#x559d;</span><TD>shout<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x8d77;</span><TD>stand up; rise; start up; (as quantifier) case; draft<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x7acb;</span><TD>stand; set up; eatablish; exist; immediate<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x51e0;</span><TD>a small table; nearly<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q12>&#x51e0;</span><TD>how many; some<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x4e03;</span><TD>seven<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x54e5;</span><TD>elder brother<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x4e2a;</span><TD>piece; single<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x548c;</span><TD>peace; harmony; and<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q16>&#x548c;</span><TD>to join<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q16>&#x548c;</span><TD>mix, blend<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q16>&#x548c;</span><TD>mix, blend, time (counting word)<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q16>&#x548c;</span><TD>win in gambling<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x53ef;</span><TD>approve; permit; can; but, yet<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x4ee5;</span><TD>use; according to<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x53bb;</span><TD>go; remove; past<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x5417;</span><TD>particle (question)<TD><img src=sound.png onclick=listen('q20')></A></Table></body></html>

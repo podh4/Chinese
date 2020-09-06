@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x7231;&#x62a4;</span><TD>to cherish; to treasure; to take care of; to love and protect<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x7231;&#x5fc3;</span><TD>compassion<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x534a;&#x591c;</span><TD>midnight; in the middle of the night<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x6bd4;&#x8d5b;</span><TD>competition (sports etc); match<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x53c2;&#x52a0;</span><TD>to participate; to take part; to join<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x806a;&#x660e;</span><TD>acute (of sight and hearing); clever; intelligent; bright; smart<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x4e56;&#x5b69;&#x5b50;</span><TD>good child<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x526a;&#x6bdb;</span><TD>clip the fur<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x89c9;&#x5f97;</span><TD>to think; to feel<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x9f99;&#x732b;</span><TD>chinchilla; Totoro (anime character)<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x8ba4;&#x8bc6;</span><TD>to know; to recognize; to be familiar with; to get acquainted with sb; knowledge; understanding; awareness; cognition<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x5c81;&#x5c81;&#x5e73;&#x5b89;</span><TD>May you have peace year after year (New Year&#x0027s greeting)<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x7fbd;&#x6bdb;</span><TD>feather; plumage; plume<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x603b;&#x662f;</span><TD>always<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x5e73;</span><TD>flat; same level; fair<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x4e56;</span><TD>good; obdient; well-behaved; (original) perverse<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x806a;</span><TD>acute hearing; clever; bright<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x7fbd;</span><TD>feather; plumes<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x5410;</span><TD>spit; tell<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q19>&#x5410;</span><TD>vomit<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x53c2;</span><TD>join; refer<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q20>&#x53c2;</span><TD>a ginseng<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q20>&#x53c2;</span><TD>uneven; differ<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x52a0;</span><TD>add; increase<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6bd4;</span><TD>to compare; ratio; than; to gesture<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x8d5b;</span><TD>contest; competition; match; comparable<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x5c9b;</span><TD>island<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x811a;</span><TD>foot<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x4e22;</span><TD>to find something missing; to throw; to put aside<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x591c;</span><TD>night; evening; dark<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x68a6;</span><TD>dream<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x56f4;</span><TD>surround; around; enclose<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x8bc6;</span><TD>to know; knowledge<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q30>&#x8bc6;</span><TD>record; sign; mark<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x89c9;</span><TD>become aware; feel<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q31>&#x89c9;</span><TD>sleep<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x603b;</span><TD>put together; total; always; chief<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x732b;</span><TD>cat<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x7f8e;</span><TD>beauty<TD><img src=sound.png onclick=listen('q34')></A></Table></body></html>

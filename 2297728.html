@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5df4;&#x58eb;</span><TD>bus; motor coach<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x8bfb;&#x4e66;</span><TD>to read a book; to study; to attend school<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x56db;&#x65e5;</span><TD>4th of the month<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x8f66;</span><TD>vehicles; machines; to lathe<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q4>&#x8f66;</span><TD>a chariot<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x5df4;</span><TD>hope earnestly; be close to<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x58eb;</span><TD>a learned person; scholar; man; soldier<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x5b57;</span><TD>word; character<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x56db;</span><TD>four<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x53ea;</span><TD>single; a counting word<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q9>&#x53ea;</span><TD>only; just<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x5b50;</span><TD>son; person; seed; suffix for nouns; first<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x5341;</span><TD>ten; topmost; complete<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x65e5;</span><TD>sun; day; daytime; date; daily<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x5c3a;</span><TD>a ruler; a unit of length<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q13>&#x5c3a;</span><TD>a note in an old Chinese musical notes<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x662f;</span><TD>correct; right; am; is; are; that<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x8bfb;</span><TD>to read; to attend school<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q15>&#x8bfb;</span><TD>pauses in a sentence<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x4e66;</span><TD>book; letter; document; write<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5403;</span><TD>to eat; to suffer<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x51fa;</span><TD>go out; appear; produce; exceed; a dramatic piece<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x4e86;</span><TD>particle for past tense<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q19>&#x4e86;</span><TD>understand; end; settle<TD><img src=sound.png onclick=listen('q19')></A></Table></body></html>

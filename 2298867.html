@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x683d;&#x79cd;</span><TD>to plant; to grow<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x6de1;&#x6de1;</span><TD>faint; dim; dull; insipid; unenthusiastic; indifferent<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x6241;&#x6241;</span><TD>flat<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x4e73;&#x767d;&#x8272;</span><TD>milky white<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x70ae;&#x5f39;&#x6811;</span><TD>Cannonball Tree<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x662f;&#x5426;</span><TD>whether (or not); if; is or isn&#x0027t<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x8150;&#x70c2;</span><TD>to rot; to putrefy; (fig.) corrupt<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x7f16;&#x53f7;</span><TD>to number; numbering; serial number<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x95f2;&#x804a;</span><TD>to chat; idle gossip<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x633a;&#x8d77;</span><TD>stick up<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x6177;&#x6168;</span><TD>vehement; fervent; generous; giving; liberal<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x5e7d;&#x9ed8;</span><TD>(loanword) humor; humorous<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x67af;&#x53f6;</span><TD>dried leaf<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x5de8;&#x5927;</span><TD>huge; immense; very large; tremendous; gigantic; enormous<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x5bbd;&#x9614;</span><TD>expansive; wide; width; thickness<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x8f66;&#x8f86;</span><TD>vehicle<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5347;&#x8d77;</span><TD>to raise; to hoist; to rise<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x9634;&#x51c9;</span><TD>shady<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x7c97;&#x58ee;</span><TD>thick and solid<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x6084;&#x6084;</span><TD>quietly; secretly; stealthily; quiet; worried; Taiwan pr. [qiao3 qiao3]<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x683d;</span><TD>to plant; to grow; to fall<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6de1;</span><TD>thin; light; tasteless<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x6241;</span><TD>flat<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x4e73;</span><TD>breast, nipples; milk, suckle<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x6d53;</span><TD>dense; thick; great; strong<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x70ae;</span><TD>big gun; cannon<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q26>&#x70ae;</span><TD>prepare; concoct<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x5426;</span><TD>negate; no<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x8150;</span><TD>rotten; corrupt; decayed<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x70c2;</span><TD>mashed; rotten; decayed; worn-out<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x7f16;</span><TD>weave; edit; organize<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x95f2;</span><TD>idle; not in use; free time<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x633a;</span><TD>stand straight; support; endure; very<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x6177;</span><TD>impassioned; generous; liberal; unselfish<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x6168;</span><TD>deeply touched; indignant; generous<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x7a9d;</span><TD>nest; den; pit; bend; roll<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x5e7d;</span><TD>quiet, secluded, tranquil; dark<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x67af;</span><TD>dried up; uninteresting<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x68f5;</span><TD>measure word (trees &#x0026 plants)<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x5de8;</span><TD>huge; big<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x5bbd;</span><TD>wide<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x9614;</span><TD>broad; wide; rich; wealthy<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x8f86;</span><TD>(quantifier for vehicles)<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x5347;</span><TD>liter; rise; ascend; promote<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x9634;</span><TD>the moon; shady; negative; genitals<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x58ee;</span><TD>big, large; robust; name of tribe<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x6084;</span><TD>quiet; silent<TD><img src=sound.png onclick=listen('q46')></A></Table></body></html>

@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x672c;&#x5b50;</span><TD>book; notebook; edition<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x5730;&#x65b9;</span><TD>region; regional (away from the central administration); local<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q2>&#x5730;&#x65b9;</span><TD>area; place; space; room; territory<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x513f;&#x5b50;</span><TD>son<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x5de5;&#x5382;</span><TD>factory<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x5de5;&#x4eba;</span><TD>worker<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x6ca1;&#x6709;</span><TD>haven&#x0027t; hasn&#x0027t; doesn&#x0027t exist; to not have; to not be<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x59b9;&#x59b9;</span><TD>younger sister; young woman<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x4f60;&#x4eec;</span><TD>you (plural)<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x5973;&#x513f;</span><TD>daughter<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x4ec0;&#x4e48;</span><TD>what?; who?; something; anything<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x8fd9;&#x91cc;</span><TD>here<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x5de5;</span><TD>worker; industry; work; delicate; good at; carpenter&#x0027s tool<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x5382;</span><TD>factory; mill; plant<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x95e8;</span><TD>door; gate; category; phylum<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x4e8c;</span><TD>two; second<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x4eba;</span><TD>human; man; people; person<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x4eec;</span><TD>(plural suffix)<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x8fd9;</span><TD>this; such<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q18>&#x8fd9;</span><TD>this (coll)<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x91cc;</span><TD>inside; lining; alley; community; village; unit of length<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x95ee;</span><TD>ask; inquire after; hold responsible<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x4ec0;</span><TD>what<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q21>&#x4ec0;</span><TD>assorted<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x4e48;</span><TD>(particle in phrase)<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q22>&#x4e48;</span><TD>(interrogative particle)<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q22>&#x4e48;</span><TD>(particle in phrase)<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x5730;</span><TD>(a particle used after an adverbial)<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q23>&#x5730;</span><TD>earth; land; place<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x65b9;</span><TD>square; direction; power (as in math); twin boat<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x59b9;</span><TD>younger sister<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x513f;</span><TD>child; son; as suffix after nouns<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x6ca1;</span><TD>none; not yet<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q27>&#x6ca1;</span><TD>sink; overflow<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x672c;</span><TD>stem; origin; this (my); current; capital<TD><img src=sound.png onclick=listen('q28')></A></Table></body></html>

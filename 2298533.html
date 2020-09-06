@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x9f3b;&#x5b54;</span><TD>nostril<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x62bd;&#x6c34;&#x673a;</span><TD>water pump<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x5598;&#x7740;&#x6c14;</span><TD>panting; gasping for air<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x5927;&#x6982;</span><TD>roughly; probably; rough; approximate; about; general idea<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x6d6e;&#x51fa;</span><TD>to emerge<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x516c;&#x65a4;</span><TD>kilogram (kg)<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x6d77;&#x6d0b;</span><TD>ocean<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x539a;&#x539a;</span><TD>thick<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x547c;&#x5438;</span><TD>to breathe<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x6fc0;&#x52a8;</span><TD>to move emotionally; to stir up (emotions); to excite<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x76ae;&#x80a4;</span><TD>skin<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x6d45;&#x6d77;</span><TD>shallow sea; sea less than 200 meters deep<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x6df1;&#x6d77;</span><TD>deep sea<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x6e7f;&#x900f;</span><TD>drenched; wet through<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x6b7b;&#x6389;</span><TD>die<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x5934;&#x9876;</span><TD>top of the head<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x6da8;&#x6f6e;</span><TD>high tide; rising tide<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x6d0b;</span><TD>ocean; vast; foreign<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x5b54;</span><TD>aperture; hole<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x6d6e;</span><TD>float; on the surface; unstable<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x80a4;</span><TD>skin<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x5c42;</span><TD>layer; coat; tier; storey; floor<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x539a;</span><TD>thick; thickness; great; profound<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x6df1;</span><TD>deep; dark; profundity; intimate; great<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x6d45;</span><TD>shallow; simple<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x6b7b;</span><TD>death; die; dead; the last; extremely<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x6cfc;</span><TD>spill; splash; fiece and tough; bad<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x6982;</span><TD>scrape; generize; general(ly); one and all<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x5598;</span><TD>pant; breathe heavily<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x900f;</span><TD>through; penetrate; thoroughly<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x62bd;</span><TD>draw out<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x8f7d;</span><TD>carry; load<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q32>&#x8f7d;</span><TD>year; record<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x6da8;</span><TD>go up; rise<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q33>&#x6da8;</span><TD>be full of; swell<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x6ce2;</span><TD>wave<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x6fc0;</span><TD>surge; arouse; excite; fierce<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x9876;</span><TD>the top of the head; the top; to carrie on the top; to push; to replace<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x547c;</span><TD>exhale; breathe out; cry out; call<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x5438;</span><TD>inhale; draw in; suck; attract<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x65a4;</span><TD>catty, half kilogram; axe<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x6e7f;</span><TD>wet; damp; humid<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x63d0;</span><TD>carry; lift; bring up<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q41>&#x63d0;</span><TD>to hold or take in hand<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x6570;</span><TD>number; several; fate<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q42>&#x6570;</span><TD>count; considered as<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x8131;</span><TD>peel off; take off; get out of<TD><img src=sound.png onclick=listen('q43')></A></Table></body></html>

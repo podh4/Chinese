@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x62a5;&#x7eb8;</span><TD>newspaper; newsprint<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x53d8;&#x6210;</span><TD>to change into; to turn into; to become<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x51b0;&#x5757;</span><TD>ice cube; ice chunk<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x731c;&#x731c;</span><TD>guess<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x51b2;&#x51c9;</span><TD>to take a shower; to take a bath; to bathe; Cantonese equivalent of &#x6d17&#x6fa1<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x51b2;&#x9a6c;&#x6876;</span><TD>flush the toilet<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x7a97;&#x5916;</span><TD>out of the window<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x5173;&#x7a97;</span><TD>close the window<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x534e;&#x6587;&#x62a5;&#x7eb8;</span><TD>Chinese newspaper<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x6d47;&#x82b1;</span><TD>to water flowers<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x8003;&#x8003;</span><TD>test<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x53e3;&#x6e34;</span><TD>thirsty<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x8fde;&#x5fd9;</span><TD>promptly; at once<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x9a6c;&#x6876;</span><TD>chamber pot; wooden pan used as toilet; toilet bowl<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x95e8;&#x7a97;</span><TD>tall windows<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x62b9;&#x7a97;</span><TD>wipe the windows<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5237;&#x9a6c;&#x6876;</span><TD>brush the toilet<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x6c34;&#x9f99;&#x5934;</span><TD>faucet; tap<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x6c34;&#x6876;</span><TD>bucket<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x5916;&#x516c;</span><TD>(coll.) mother&#x0027s father; maternal grandfather<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x5916;&#x5a46;</span><TD>(coll.) mother&#x0027s mother; maternal grandmother<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6d17;&#x8f66;</span><TD>car wash<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x6d17;&#x7c73;</span><TD>wash the rice<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x6447;&#x6447;</span><TD>sway<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x82f1;&#x6587;&#x62a5;&#x7eb8;</span><TD>English newspaper<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x6742;&#x83dc;&#x996d;</span><TD>mixed vegetable rice<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x6742;&#x5fd7;</span><TD>magazine<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x91cd;&#x8981;</span><TD>important; significant; major<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x716e;&#x996d;</span><TD>to cook<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x6d47;</span><TD>pour; irrigate; to water<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x6876;</span><TD>tub; pail; bucket; keg; barrel<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x65e7;</span><TD>old; past; used<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x62a5;</span><TD>report; newspaper; reply; requite<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x7a97;</span><TD>window<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x6742;</span><TD>mixed; miscellaneous<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x5fd7;</span><TD>will; aspiration; record; keep in mind<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x5916;</span><TD>outer; outside; besides<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x5a46;</span><TD>old woman; mother-in-law<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x6d41;</span><TD>flow; drift; stream; pass on; hand down; style; class<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x8fde;</span><TD>link; join; even; a company in army<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x8003;</span><TD>investigate; verify; exam, test<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x731c;</span><TD>guess; suspect<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x6447;</span><TD>swing; wave; shake<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x6e34;</span><TD>thirsty; yearningly<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x91cd;</span><TD>heavy; serious; important<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q45>&#x91cd;</span><TD>repeat; again<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x4f4e;</span><TD>low; hang down<TD><img src=sound.png onclick=listen('q46')></A><TR><TD><span  class=span-class id=q47>&#x51c0;</span><TD>clean; completely; net<TD><img src=sound.png onclick=listen('q47')></A><TR><TD><span  class=span-class id=q48>&#x5fd8;</span><TD>forget<TD><img src=sound.png onclick=listen('q48')></A></Table></body></html>

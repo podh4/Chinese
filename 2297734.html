@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x516b;&#x6708;</span><TD>August; eighth month (of the lunar year)<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x767d;&#x4e91;</span><TD>white cloud<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x4e8c;&#x6708;</span><TD>February; second month (of the lunar year)<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x5173;&#x95e8;</span><TD>to close a door; to lock a door; (of a shop etc) to close (for the night, or permanently)<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x8fd8;&#x4e66;</span><TD>return books<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x8fd8;&#x6709;</span><TD>furthermore; in addition; still; also<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x4e5d;&#x6708;</span><TD>September; ninth month (of the lunar year)<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x5f00;&#x5fc3;</span><TD>to feel happy; to rejoice; to have a great time; to make fun of sb<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x516d;&#x6708;</span><TD>June; sixth month (of the lunar year)<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x670b;&#x53cb;</span><TD>friend<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x4e03;&#x6708;</span><TD>July; seventh month (of the lunar year)<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x4e09;&#x6708;</span><TD>March; third month (of the lunar year)<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x626b;&#x5730;</span><TD>to sweep the floor; to reach rock bottom; to be at an all-time low<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x4e0a;&#x5b66;</span><TD>to go to school; to attend school<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x751f;&#x65e5;</span><TD>birthday<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x5341;&#x4e8c;&#x6708;</span><TD>December; twelfth month (of the lunar year)<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5341;&#x4e00;&#x6708;</span><TD>November; eleventh month (of the lunar year)<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x5341;&#x6708;</span><TD>October; tenth month (of the lunar year)<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x56db;&#x6708;</span><TD>April; fourth month (of the lunar year)<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x540c;&#x5b66;</span><TD>to study at the same school; fellow student; classmate<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x4e94;&#x6708;</span><TD>May; fifth month (of the lunar year)<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x5b66;&#x751f;</span><TD>student; schoolchild<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x5b66;&#x4e60;</span><TD>to learn; to study<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x4e00;&#x6708;</span><TD>January; first month (of the lunar year)<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x5f00;</span><TD>open<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x5173;</span><TD>close; shut; involve in; critical juncture; a pass<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x626b;</span><TD>sweep; wipe out<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q27>&#x626b;</span><TD>broom<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x82b1;</span><TD>flower; pattern; colorful; variegated; blurred; fanciful; spend<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x8fd8;</span><TD>to return (to)<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q29>&#x8fd8;</span><TD>still; yet<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x767d;</span><TD>white; clean; in vain<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x4e91;</span><TD>cloud; say<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x5b66;</span><TD>learn; study; school; mimic; knowledge; subject<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x751f;</span><TD>grow; give birth to; live; life; not ripe; unfamiliar; student<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x540c;</span><TD>same; equal; share; in common; together<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x4e60;</span><TD>practise; review; be used to; custom<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x670b;</span><TD>friend<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x53cb;</span><TD>friend; friendly<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x6708;</span><TD>moon; month<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x98ce;</span><TD>wind<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x7535;</span><TD>lightening; electricity; shock with electricity; abbr. for telephone<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x706b;</span><TD>fire; flame; angry; urgent<TD><img src=sound.png onclick=listen('q41')></A></Table></body></html>

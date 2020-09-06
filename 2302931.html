@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x5429;&#x5490;</span><TD>to tell; to instruct; to command<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x51fa;&#x79df;</span><TD>to rent<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x8fde;&#x73af;&#x753b;</span><TD>lianhuanhua (graphic novel)<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x644a;&#x5b50;</span><TD>booth; vendor&#x0027s stall; organizational structure; scale of operations<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x9a91;&#x697c;</span><TD>arcade (architecture)<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x521b;&#x4f5c;</span><TD>to create; to produce; to write; creative work; creation<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x6765;&#x5bbe;</span><TD>guest; visitor<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x8868;&#x73b0;</span><TD>to show; to show off; to display; to manifest; expression; manifestation; show; display; performance (at work etc); behavior<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x7a7a;&#x95f4;</span><TD>space<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x5927;&#x8857;</span><TD>street; main street<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x5370;&#x8c61;</span><TD>impression<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x6311;&#x6218;</span><TD>to challenge; challenge<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x4e2d;&#x5b66;</span><TD>middle school<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x58c1;&#x753b;</span><TD>mural (painting); fresco<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x53c2;&#x4e0e;</span><TD>to participate (in sth)<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x51fa;&#x94b1;</span><TD>to pay<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x51fa;&#x5e2d;</span><TD>to attend; to participate; present<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x7a7f;&#x8d8a;</span><TD>to pass through; to cross; to overcome<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x5e95;&#x5c42;</span><TD>ground or first floor; bottom (of a pile); lowest rung (of society)<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x540a;&#x6865;</span><TD>drawbridge; suspension bridge<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x65b9;&#x9762;</span><TD>respect; aspect; field; side<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6539;&#x5584;</span><TD>to make better; to improve<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x7cd5;&#x997c;</span><TD>cakes; pastries<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x6cb3;&#x53e3;</span><TD>estuary; the mouth of a river<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x753b;&#x9762;</span><TD>scene; tableau; picture; image; screen (displayed by a computer); (motion picture) frame; field of view<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x56de;&#x987e;</span><TD>to look back; to review<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x56de;&#x987e;&#x5386;&#x53f2;</span><TD>to look back at history<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x5168;&#x957f;</span><TD>overall length; span<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x8bbe;&#x5728;</span><TD>located at; set up in a particular location<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x65f6;&#x7a7a;</span><TD>space-time (in relativity)<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x6c34;&#x6d41;</span><TD>river; stream<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x5851;&#x50cf;</span><TD>(molded or modeled) statue<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x6311;&#x8d77;</span><TD>to provoke; to stir up; to incite<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x540c;&#x6837;</span><TD>same; equal; equivalent<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x4e00;&#x4ee3;</span><TD>generation<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x79fb;&#x6c11;</span><TD>to immigrate; to migrate; emigrant; immigrant<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x65e9;&#x671f;</span><TD>early period; early phase; early stage<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x5de6;&#x90bb;&#x53f3;&#x820d;</span><TD>neighbors; next-door neighbors; related work units; colleagues doing related work<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x53c2;&#x89c2;&#x8005;</span><TD>visitor<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x6865;&#x8eab;</span><TD>a bridge<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x5199;&#x4fe1;&#x4eba;</span><TD>the writer<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x540e;&#x5df7;</span><TD>back alley<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x7a7a;&#x6876;</span><TD>an empty barrel<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x7a7f;&#x8d8a;&#x65f6;&#x7a7a;</span><TD>time travelling; through time and space<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x5e45;</span><TD>the width of cloth<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x6284;</span><TD>copy; transcribe; take a shortcut; take on<TD><img src=sound.png onclick=listen('q46')></A><TR><TD><span  class=span-class id=q47>&#x8d5a;</span><TD>gain; make a profit; earn<TD><img src=sound.png onclick=listen('q47')></A><TR><TD><span  class=span-class id=q48>&#x6c1b;</span><TD>atmosphere<TD><img src=sound.png onclick=listen('q48')></A><TR><TD><span  class=span-class id=q49>&#x5c40;</span><TD>confined; narrow; part; situation; bureau; limitation<TD><img src=sound.png onclick=listen('q49')></A><TR><TD><span  class=span-class id=q50>&#x53a6;</span><TD>mansion; big building<TD><img src=sound.png onclick=listen('q50')></A><TR><TD><span  class=span-class id=q51>&#x8d21;</span><TD>tribute<TD><img src=sound.png onclick=listen('q51')></A><TR><TD><span  class=span-class id=q52>&#x7f6e;</span><TD>place, lay out; set aside<TD><img src=sound.png onclick=listen('q52')></A><TR><TD><span  class=span-class id=q53>&#x653f;</span><TD>politics; administrative<TD><img src=sound.png onclick=listen('q53')></A><TR><TD><span  class=span-class id=q54>&#x5e9c;</span><TD>government office; official residence; palace<TD><img src=sound.png onclick=listen('q54')></A><TR><TD><span  class=span-class id=q55>&#x5eca;</span><TD>porch; veranda; corridor; gallery<TD><img src=sound.png onclick=listen('q55')></A><TR><TD><span  class=span-class id=q56>&#x540a;</span><TD>hang; condolence<TD><img src=sound.png onclick=listen('q56')></A><TR><TD><span  class=span-class id=q57>&#x79df;</span><TD>rent; lease; rental; tax<TD><img src=sound.png onclick=listen('q57')></A><TR><TD><span  class=span-class id=q58>&#x5429;</span><TD>to instruct<TD><img src=sound.png onclick=listen('q58')></A><TR><TD><span  class=span-class id=q59>&#x5490;</span><TD>to tell; to instruct<TD><img src=sound.png onclick=listen('q59')></A><TR><TD><span  class=span-class id=q60>&#x6d25;</span><TD>ferry; saliva; sweat<TD><img src=sound.png onclick=listen('q60')></A><TR><TD><span  class=span-class id=q61>&#x634f;</span><TD>pick with fingers; knead; mold<TD><img src=sound.png onclick=listen('q61')></A></Table></body></html>

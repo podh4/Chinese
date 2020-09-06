@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x4fdd;&#x6301;</span><TD>to keep; to maintain; to hold; to preserve<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x62c5;&#x5fc3;</span><TD>anxious; worried; uneasy; to worry; to be anxious<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x7535;&#x8111;</span><TD>computer<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x800c;&#x4e14;</span><TD>(not only ...) but also; moreover; in addition; furthermore<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x653e;&#x677e;</span><TD>to loosen; to relax<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x683c;&#x5b50;</span><TD>lattice; check (pattern of squares)<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x6237;&#x5916;</span><TD>outdoor<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x660f;&#x6697;</span><TD>dusky<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x8fd1;&#x89c6;</span><TD>shortsighted; nearsighted; myopia<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x8ddd;&#x79bb;</span><TD>distance; to be apart from<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x54b3;&#x55fd;</span><TD>to cough<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x8fde;&#x7eed;</span><TD>continuous; in a row; serial; consecutive<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x6a21;&#x7cca;</span><TD>vague; indistinct; fuzzy<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x4f24;&#x5bb3;</span><TD>to injure; to harm<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x586b;&#x5199;</span><TD>to fill in a form; to write data in a box (on a questionnaire or web form)<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x75db;&#x82e6;</span><TD>pain; suffering; painful<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x5934;&#x75bc;</span><TD>headache<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x95ee;&#x9898;</span><TD>question; problem; issue; topic<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x4e60;&#x60ef;</span><TD>habit; custom; usual practice; to be used to<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x4e0b;&#x964d;</span><TD>to decline; to drop; to fall; to go down; to decrease<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x8bca;&#x6240;</span><TD>clinic<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6b63;&#x786e;</span><TD>correct; proper<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x6d4b;</span><TD>measure; infer<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x786e;</span><TD>sure; hard; firm; true; authentic<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x7801;</span><TD>pile up; stack; sign; digit; code; yard<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x586b;</span><TD>fill; fill in; stuff; write<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x683c;</span><TD>shelf; standard; section; examine; grapple; long branch<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x6697;</span><TD>dim; dark; hidden<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x8ddd;</span><TD>distance; be apart from<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x6237;</span><TD>door; household; account<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x4e14;</span><TD>just; even; almost; as well<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x9694;</span><TD>separate; be separated of<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x60e8;</span><TD>tragic; pathetic; pitiful<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x76ef;</span><TD>stare; gaze at<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x75bc;</span><TD>ache; pain; love<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x54b3;</span><TD>cough<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q36>&#x54b3;</span><TD>well (interjection for regret)<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x55fd;</span><TD>cough<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x8bca;</span><TD>examine; diagnose<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x964d;</span><TD>to drop; to descend<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q39>&#x964d;</span><TD>surrender<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x7cca;</span><TD>thick porridge; paste; burnt; confuse<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x778e;</span><TD>blind; to no purpose<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x89c6;</span><TD>look at; inspect; regard as; vision<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x9898;</span><TD>title; topic; inscribe; problem<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x8fde;</span><TD>link; join; even; a company in army<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x7eed;</span><TD>link; connect; continue; add<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x8111;</span><TD>brain<TD><img src=sound.png onclick=listen('q46')></A><TR><TD><span  class=span-class id=q47>&#x6301;</span><TD>hold; control; support<TD><img src=sound.png onclick=listen('q47')></A><TR><TD><span  class=span-class id=q48>&#x800c;</span><TD>and; but; however<TD><img src=sound.png onclick=listen('q48')></A><TR><TD><span  class=span-class id=q49>&#x677e;</span><TD>pine; loose; relax; soft<TD><img src=sound.png onclick=listen('q49')></A><TR><TD><span  class=span-class id=q50>&#x5dee;</span><TD>to err; to make mistake<TD><img src=sound.png onclick=listen('q50')></A><TR><TD><span  class=span-class id=q50>&#x5dee;</span><TD>difference<TD><img src=sound.png onclick=listen('q50')></A><TR><TD><span  class=span-class id=q50>&#x5dee;</span><TD>an errand; a job; to dispatch<TD><img src=sound.png onclick=listen('q50')></A><TR><TD><span  class=span-class id=q51>&#x62c5;</span><TD>to carry; to take on (a responsibility)<TD><img src=sound.png onclick=listen('q51')></A><TR><TD><span  class=span-class id=q51>&#x62c5;</span><TD>50 kg; loads; burdens<TD><img src=sound.png onclick=listen('q51')></A><TR><TD><span  class=span-class id=q52>&#x75db;</span><TD>pain; ache; extremely<TD><img src=sound.png onclick=listen('q52')></A><TR><TD><span  class=span-class id=q53>&#x5bb3;</span><TD>harm; damage<TD><img src=sound.png onclick=listen('q53')></A><TR><TD><span  class=span-class id=q54>&#x60ef;</span><TD>habit; be used to; indulge; spoil<TD><img src=sound.png onclick=listen('q54')></A></Table></body></html>

@@ -1,0 +1,77 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<style>
+.table-style {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-style td, #table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-style tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-style tr:hover {background-color: #ddd;}
+
+.table-style th {
+	padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+span {
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size :20px;
+
+}
+
+
+</style>
+
+
+<script>	
+
+function listen(q) {
+ 
+
+  var msg1 =  document.getElementById(q).innerHTML
+	
+  str = decodeHtml(msg1);
+  
+  var msg = new SpeechSynthesisUtterance(str);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+</script>
+</head>
+<body>
+<H2><A href=index.html>Home</A></H2>
+<table class=table-style>
+<TR><TH>Chinese<TH>English<TH>Sound
+
+
+<TR><TD><span  class=span-class id=q1>&#x6e05;&#x84b8;&#x9c7c;</span><TD>steamed fish<TD><img src=sound.png onclick=listen('q1')></A><TR><TD><span  class=span-class id=q2>&#x8106;&#x76ae;&#x70e7;&#x9e21;</span><TD>crispy roast chicken<TD><img src=sound.png onclick=listen('q2')></A><TR><TD><span  class=span-class id=q3>&#x82e6;&#x74dc;&#x714e;&#x86cb;</span><TD>bitter melon fried eggs<TD><img src=sound.png onclick=listen('q3')></A><TR><TD><span  class=span-class id=q4>&#x8d60;&#x9001;</span><TD>to present as a gift<TD><img src=sound.png onclick=listen('q4')></A><TR><TD><span  class=span-class id=q5>&#x54b8;&#x83dc;&#x9e2d;&#x6c64;</span><TD>pickle duck soup<TD><img src=sound.png onclick=listen('q5')></A><TR><TD><span  class=span-class id=q6>&#x76ae;&#x86cb;&#x7626;&#x8089;&#x7ca5;</span><TD>preserved egg and lean meat porridge<TD><img src=sound.png onclick=listen('q6')></A><TR><TD><span  class=span-class id=q7>&#x7c73;&#x7c92;</span><TD>grains of rice<TD><img src=sound.png onclick=listen('q7')></A><TR><TD><span  class=span-class id=q8>&#x6a21;&#x4eff;</span><TD>to imitate; to copy; to emulate; to mimic; model<TD><img src=sound.png onclick=listen('q8')></A><TR><TD><span  class=span-class id=q9>&#x4f8b;&#x5982;</span><TD>for example; for instance; such as<TD><img src=sound.png onclick=listen('q9')></A><TR><TD><span  class=span-class id=q10>&#x6709;&#x6bd2;</span><TD>poisonous<TD><img src=sound.png onclick=listen('q10')></A><TR><TD><span  class=span-class id=q11>&#x8d22;&#x4e3b;</span><TD>rich man; moneybags<TD><img src=sound.png onclick=listen('q11')></A><TR><TD><span  class=span-class id=q12>&#x4e89;&#x593a;</span><TD>to fight over; to contest; to vie over<TD><img src=sound.png onclick=listen('q12')></A><TR><TD><span  class=span-class id=q13>&#x5f7c;&#x6b64;</span><TD>each other; one another<TD><img src=sound.png onclick=listen('q13')></A><TR><TD><span  class=span-class id=q14>&#x4f7f;&#x52b2;</span><TD>to exert all one&#x0027s strength<TD><img src=sound.png onclick=listen('q14')></A><TR><TD><span  class=span-class id=q15>&#x4f1f;&#x5927;</span><TD>great; mighty; large<TD><img src=sound.png onclick=listen('q15')></A><TR><TD><span  class=span-class id=q16>&#x667a;&#x6167;</span><TD>wisdom; knowledge; intelligent; intelligence<TD><img src=sound.png onclick=listen('q16')></A><TR><TD><span  class=span-class id=q17>&#x9999;&#x70b8;&#x5927;&#x867e;</span><TD>sweet fried prawns<TD><img src=sound.png onclick=listen('q17')></A><TR><TD><span  class=span-class id=q18>&#x70e4;&#x9e21;&#x7fc5;</span><TD>roast chicken wings<TD><img src=sound.png onclick=listen('q18')></A><TR><TD><span  class=span-class id=q19>&#x6e05;&#x7092;&#x8c46;&#x82d7;</span><TD>stir-fried bean<TD><img src=sound.png onclick=listen('q19')></A><TR><TD><span  class=span-class id=q20>&#x6a59;&#x6c41;</span><TD>orange juice<TD><img src=sound.png onclick=listen('q20')></A><TR><TD><span  class=span-class id=q21>&#x9664;&#x4e86;</span><TD>besides; apart from (... also...); in addition to; except (for)<TD><img src=sound.png onclick=listen('q21')></A><TR><TD><span  class=span-class id=q22>&#x6298;&#x65ad;</span><TD>to snap sth off; to break<TD><img src=sound.png onclick=listen('q22')></A><TR><TD><span  class=span-class id=q23>&#x84b8;</span><TD>steam; evaporate<TD><img src=sound.png onclick=listen('q23')></A><TR><TD><span  class=span-class id=q24>&#x8106;</span><TD>brittle; crisp<TD><img src=sound.png onclick=listen('q24')></A><TR><TD><span  class=span-class id=q25>&#x714e;</span><TD>fry<TD><img src=sound.png onclick=listen('q25')></A><TR><TD><span  class=span-class id=q26>&#x8d60;</span><TD>to present<TD><img src=sound.png onclick=listen('q26')></A><TR><TD><span  class=span-class id=q27>&#x54b8;</span><TD>salted; salty; all; harmonic<TD><img src=sound.png onclick=listen('q27')></A><TR><TD><span  class=span-class id=q28>&#x7ca5;</span><TD>porridge; rice gruel<TD><img src=sound.png onclick=listen('q28')></A><TR><TD><span  class=span-class id=q29>&#x7c92;</span><TD>grain; granule<TD><img src=sound.png onclick=listen('q29')></A><TR><TD><span  class=span-class id=q30>&#x4eff;</span><TD>copy; imitate<TD><img src=sound.png onclick=listen('q30')></A><TR><TD><span  class=span-class id=q31>&#x4f8b;</span><TD>regulation; routine; precedent; case; exemple<TD><img src=sound.png onclick=listen('q31')></A><TR><TD><span  class=span-class id=q32>&#x6bd2;</span><TD>poison; cruel<TD><img src=sound.png onclick=listen('q32')></A><TR><TD><span  class=span-class id=q33>&#x8d22;</span><TD>wealth; money<TD><img src=sound.png onclick=listen('q33')></A><TR><TD><span  class=span-class id=q34>&#x593a;</span><TD>seize; contend for; fight for<TD><img src=sound.png onclick=listen('q34')></A><TR><TD><span  class=span-class id=q35>&#x5f7c;</span><TD>that; those<TD><img src=sound.png onclick=listen('q35')></A><TR><TD><span  class=span-class id=q36>&#x52b2;</span><TD>strength; interest<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q36>&#x52b2;</span><TD>strong; powerful<TD><img src=sound.png onclick=listen('q36')></A><TR><TD><span  class=span-class id=q37>&#x4f1f;</span><TD>tall; big; great<TD><img src=sound.png onclick=listen('q37')></A><TR><TD><span  class=span-class id=q38>&#x6167;</span><TD>wisdom<TD><img src=sound.png onclick=listen('q38')></A><TR><TD><span  class=span-class id=q39>&#x70b8;</span><TD>fry<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q39>&#x70b8;</span><TD>explode<TD><img src=sound.png onclick=listen('q39')></A><TR><TD><span  class=span-class id=q40>&#x70e4;</span><TD>roast; bake; toast<TD><img src=sound.png onclick=listen('q40')></A><TR><TD><span  class=span-class id=q41>&#x82d7;</span><TD>sprouts; Miao nationality<TD><img src=sound.png onclick=listen('q41')></A><TR><TD><span  class=span-class id=q42>&#x76d8;</span><TD>tray; plate; market; wind; calculate<TD><img src=sound.png onclick=listen('q42')></A><TR><TD><span  class=span-class id=q43>&#x7626;</span><TD>thin; lean (meat)<TD><img src=sound.png onclick=listen('q43')></A><TR><TD><span  class=span-class id=q44>&#x6c41;</span><TD>juice<TD><img src=sound.png onclick=listen('q44')></A><TR><TD><span  class=span-class id=q45>&#x9664;</span><TD>rid of; except; besides; stair<TD><img src=sound.png onclick=listen('q45')></A><TR><TD><span  class=span-class id=q46>&#x4e89;</span><TD>compete; contend; strive; dispute<TD><img src=sound.png onclick=listen('q46')></A><TR><TD><span  class=span-class id=q47>&#x65ad;</span><TD>to break into two; not continuous; to decide; to judge<TD><img src=sound.png onclick=listen('q47')></A></Table></body></html>
