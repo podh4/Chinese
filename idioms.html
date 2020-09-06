@@ -1,0 +1,334 @@
+<html>
+
+<head>
+
+<style>
+
+span, button, td {
+
+font-size:25pt;
+}
+
+
+</style>
+</head>
+<body>
+<P align=left><A href=quiz.html><strong>Quiz HOME</strong></A>
+<center>
+<P><select type=text id=char style="display:none">
+
+
+<option name=c1 value="一块四毛">一块四毛</option>
+<option name=c2 value="不一会儿">不一会儿</option>
+<option name=c3 value="干干净净">干干净净</option>
+<option name=c4 value="高高兴兴">高高兴兴</option>
+<option name=c5 value="开开心心">开开心心</option>
+<option name=c6 value="快快乐乐">快快乐乐</option>
+<option name=c7 value="学校门口">学校门口</option>
+<option name=c8 value="行人天桥">行人天桥</option>
+<option name=c9 value="十字路口">十字路口</option>
+<option name=c10 value="有说有笑">有说有笑</option>
+<option name=c11 value="分工合作">分工合作</option>
+<option name=c12 value="嘻嘻哈哈">嘻嘻哈哈</option>
+<option name=c13 value="办生日会">办生日会</option>
+<option name=c14 value="手影游戏">手影游戏</option>
+<option name=c15 value="岁岁平安">岁岁平安</option>
+<option name=c16 value="相亲相爱">相亲相爱</option>
+<option name=c17 value="安安静静">安安静静</option>
+<option name=c18 value="华文报纸">华文报纸</option>
+<option name=c19 value="英文报纸">英文报纸</option>
+<option name=c20 value="满头大汗">满头大汗</option>
+<option name=c21 value="尽一份力">尽一份力</option>
+<option name=c22 value="各种各样">各种各样</option>
+<option name=c23 value="一…也没">一…也没</option>
+<option name=c24 value="不但…还">不但…还</option>
+<option name=c25 value="倾盆大雨">倾盆大雨</option>
+<option name=c26 value="灵机一动">灵机一动</option>
+<option name=c27 value="闷闷不乐">闷闷不乐</option>
+<option name=c28 value="见义勇为">见义勇为</option>
+<option name=c29 value="熟食中心">熟食中心</option>
+<option name=c30 value="清洁工人">清洁工人</option>
+<option name=c31 value="清洁工人">清洁工人</option>
+<option name=c32 value="自言自语">自言自语</option>
+<option name=c33 value="阅读角落">阅读角落</option>
+<option name=c34 value="不慌不忙">不慌不忙</option>
+<option name=c35 value="狼吞虎咽">狼吞虎咽</option>
+<option name=c36 value="齐心协力">齐心协力</option>
+<option name=c37 value="异口同声">异口同声</option>
+<option name=c38 value="愁眉苦脸">愁眉苦脸</option>
+<option name=c39 value="不约而同">不约而同</option>
+<option name=c40 value="争先恐后">争先恐后</option>
+<option name=c41 value="隐形眼镜">隐形眼镜</option>
+<option name=c42 value="不顾一切">不顾一切</option>
+<option name=c43 value="五彩缤纷">五彩缤纷</option>
+<option name=c44 value="熟食中心">熟食中心</option>
+<option name=c45 value="兴高采烈">兴高采烈</option>
+<option name=c46 value="恍然大悟">恍然大悟</option>
+<option name=c47 value="冬暖夏凉">冬暖夏凉</option>
+<option name=c48 value="闯关游戏">闯关游戏</option>
+<option name=c49 value="遮风挡雨">遮风挡雨</option>
+<option name=c50 value="脆皮烧鸡">脆皮烧鸡</option>
+<option name=c51 value="苦瓜煎蛋">苦瓜煎蛋</option>
+<option name=c52 value="咸菜鸭汤">咸菜鸭汤</option>
+<option name=c53 value="香炸大虾">香炸大虾</option>
+<option name=c54 value="清炒豆苗">清炒豆苗</option>
+<option name=c55 value="掩耳盗铃">掩耳盗铃</option>
+<option name=c56 value="神机妙算">神机妙算</option>
+<option name=c57 value="回顾历史">回顾历史</option>
+<option name=c58 value="左邻右舍">左邻右舍</option>
+<option name=c59 value="穿越时空">穿越时空</option>
+<option name=c60 value="大吃一惊">大吃一惊</option>
+<option name=c61 value="环游世界">环游世界</option>
+<option name=c62 value="边走边想">边走边想</option>
+<option name=c63 value="毕业典礼">毕业典礼</option>
+<option name=c64 value="左思右想">左思右想</option>
+<option name=c65 value="四面八方">四面八方</option>
+<option name=c66 value="太空行走">太空行走</option>
+<option name=c67 value="心满意足">心满意足</option>
+<option name=c68 value="日出日落">日出日落</option>
+<option name=c69 value="控制面板">控制面板</option>
+
+
+
+</select>
+
+<P><select type=text id=explain style="display:none">
+
+<option name=c1 value="1 dollar and 40 cents">1 dollar and 40 cents</option>
+<option name=c2 value="in a moment">in a moment</option>
+<option name=c3 value="clean">clean</option>
+<option name=c4 value="cheerful and optimistic; in a good mood; gaily">cheerful and optimistic; in a good mood; gaily</option>
+<option name=c5 value="happy">happy</option>
+<option name=c6 value="happy">happy</option>
+<option name=c7 value="school gate">school gate</option>
+<option name=c8 value="overhead bridge">overhead bridge</option>
+<option name=c9 value="crossroads; intersection">crossroads; intersection</option>
+<option name=c10 value="talking and laughing; to jest; cheerful and lively">talking and laughing; to jest; cheerful and lively</option>
+<option name=c11 value="work together in coordination">work together in coordination</option>
+<option name=c12 value="laughing">laughing</option>
+<option name=c13 value="hold a birthday party">hold a birthday party</option>
+<option name=c14 value="hand shadow game">hand shadow game</option>
+<option name=c15 value="May you have peace year after year (New Year's greeting)">May you have peace year after year (New Year's greeting)</option>
+<option name=c16 value="to be kind and love one another (idiom); bound by deep emotions">to be kind and love one another (idiom); bound by deep emotions</option>
+<option name=c17 value="quiet">quiet</option>
+<option name=c18 value="Chinese newspaper">Chinese newspaper</option>
+<option name=c19 value="English newspaper">English newspaper</option>
+<option name=c20 value="brow beaded with sweat; perspiring freely">brow beaded with sweat; perspiring freely</option>
+<option name=c21 value="make an effort">make an effort</option>
+<option name=c22 value="various sorts and varieties">various sorts and varieties</option>
+<option name=c23 value="without even one">without even one</option>
+<option name=c24 value="not only𠉫ut also">not only𠉫ut also</option>
+<option name=c25 value="a downpour; rain bucketing down; fig. to be overwhelmed (with work or things to study)">a downpour; rain bucketing down; fig. to be overwhelmed (with work or things to study)</option>
+<option name=c26 value="a bright idea suddenly occurs (idiom); to hit upon an inspiration; to be struck by a brainwave">a bright idea suddenly occurs (idiom); to hit upon an inspiration; to be struck by a brainwave</option>
+<option name=c27 value="depressed; sulky; moody; unhappy">depressed; sulky; moody; unhappy</option>
+<option name=c28 value="to see what is right and act courageously (idiom, from Analects); to stand up bravely for the truth; acting heroically in a just cause">to see what is right and act courageously (idiom, from Analects); to stand up bravely for the truth; acting heroically in a just cause</option>
+<option name=c29 value="food centre">food centre</option>
+<option name=c30 value="cleaner">cleaner</option>
+<option name=c31 value="cleaner">cleaner</option>
+<option name=c32 value="to talk to oneself; to think aloud; to soliloquize">to talk to oneself; to think aloud; to soliloquize</option>
+<option name=c33 value="reading corner">reading corner</option>
+<option name=c34 value="calm and unhurried (idiom); composed; to take matters calmly">calm and unhurried (idiom); composed; to take matters calmly</option>
+<option name=c35 value="to wolf down one's food (idiom); to devour ravenously; to gorge oneself">to wolf down one's food (idiom); to devour ravenously; to gorge oneself</option>
+<option name=c36 value="to work with a common purpose (idiom); to make concerted efforts; to pull together; to work as one">to work with a common purpose (idiom); to make concerted efforts; to pull together; to work as one</option>
+<option name=c37 value="different mouths, same voice; to speak in unison (idiom)">different mouths, same voice; to speak in unison (idiom)</option>
+<option name=c38 value="frowning and worried (idiom); showing concern">frowning and worried (idiom); showing concern</option>
+<option name=c39 value="to agree by chance (idiom); taking the same action without prior consultation">to agree by chance (idiom); taking the same action without prior consultation</option>
+<option name=c40 value="striving to be first and fearing to be last (idiom); outdoing one another">striving to be first and fearing to be last (idiom); outdoing one another</option>
+<option name=c41 value="contact lens">contact lens</option>
+<option name=c42 value="reckless; regardless of everything">reckless; regardless of everything</option>
+<option name=c43 value="all the colors in profusion (idiom); a garish display">all the colors in profusion (idiom); a garish display</option>
+<option name=c44 value="food centre">food centre</option>
+<option name=c45 value="happy and excited (idiom); in high spirits; in great delight">happy and excited (idiom); in high spirits; in great delight</option>
+<option name=c46 value="to suddenly realize; to suddenly see the light">to suddenly realize; to suddenly see the light</option>
+<option name=c47 value="Warm in winter and cool in summer">Warm in winter and cool in summer</option>
+<option name=c48 value="level game">level game</option>
+<option name=c49 value="shelter from the rain">shelter from the rain</option>
+<option name=c50 value="crispy roast chicken">crispy roast chicken</option>
+<option name=c51 value="bitter melon fried eggs">bitter melon fried eggs</option>
+<option name=c52 value="pickle duck soup">pickle duck soup</option>
+<option name=c53 value="sweet fried prawns">sweet fried prawns</option>
+<option name=c54 value="stir-fried bean">stir-fried bean</option>
+<option name=c55 value="lit. to cover one's ears whilst stealing a bell; to deceive oneself; to bury one's head in the sand (idiom)">lit. to cover one's ears whilst stealing a bell; to deceive oneself; to bury one's head in the sand (idiom)</option>
+<option name=c56 value="brilliant plan; the methods are beyond human">brilliant plan; the methods are beyond human</option>
+<option name=c57 value="to look back at history">to look back at history</option>
+<option name=c58 value="neighbors; next-door neighbors; related work units; colleagues doing related work">neighbors; next-door neighbors; related work units; colleagues doing related work</option>
+<option name=c59 value="time travelling; through time and space">time travelling; through time and space</option>
+<option name=c60 value="to have a surprise (idiom); shocked or startled; gobsmacked">to have a surprise (idiom); shocked or startled; gobsmacked</option>
+<option name=c61 value="travel around the world">travel around the world</option>
+<option name=c62 value="think while walking">think while walking</option>
+<option name=c63 value="graduation ceremony; commencement ceremony; commencement exercises">graduation ceremony; commencement ceremony; commencement exercises</option>
+<option name=c64 value="to turn over in one's mind (idiom); to think through from different angles; to ponder">to turn over in one's mind (idiom); to think through from different angles; to ponder</option>
+<option name=c65 value="in all directions; all around; far and near">in all directions; all around; far and near</option>
+<option name=c66 value="spacewalk">spacewalk</option>
+<option name=c67 value="perfectly contented (idiom); perfectly satisfied">perfectly contented (idiom); perfectly satisfied</option>
+<option name=c68 value="sunrise and sunset">sunrise and sunset</option>
+<option name=c69 value="control panel">control panel</option>
+
+
+
+</select>	
+<button id=text onclick="test()" >Try</button>
+<P>
+	<Table id=hide0 border=0 style="display:none">	
+	<TR>
+<TD>Number of Correct Attempts : <span id=count style="display:none"></span><span id=countNum></span>
+<TR>
+<TD>Number of Wrong Attempts : <span id=count2 style="display:none"></span><span id=countNum2></span>
+</Table>		
+		<P>
+		<span id=answer></span>
+		</P>
+		<P>
+		<span id=message></span>
+		</P>
+		
+		
+	
+	<button id=text2 onclick="listen()" style="display:none"><img src=sound.png height=100pt width=100pt></button>
+	<P>
+	<Table id=hide border=0 width=80% height=50 cellspacing=10 style="display:none">
+	
+	<TR>
+	<TD  width=200 height=100 align=center  ><span id="a1" >word : </TD>
+	<TD colspan=2 width=400 height=100 align=left ><span id="a2" ></TD>
+	
+	
+	
+	<TR>
+	<TD bgcolor=yellow width=20% height=100 align=center onclick="myFunction('q1')" ><span id="q1" ></TD>
+	<TD bgcolor=yellow width=20% height=100 align=center onclick="myFunction('q2')"><span id="q2" ></TD>
+	<TD bgcolor=yellow width=20% height=100 align=center onclick="myFunction('q3')"><span id="q3" ></TD>
+	
+
+	</Table>
+    
+
+</div>
+</body>
+</html>
+<script>
+
+	
+function listen() {
+ 
+ var msg1 = document.getElementById("char").value;
+  var msg = new SpeechSynthesisUtterance(msg1);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+	
+function speak(msg1) {
+ 
+ 
+  var msg = new SpeechSynthesisUtterance(msg1);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[17];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[0];
+	}
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+
+function myFunction(q) {
+  
+  if (document.getElementById("explain").value ==  document.getElementById(q).innerHTML)
+  {
+     document.getElementById("message").innerHTML =  "correct" ;
+	  speak("Correct");
+	document.getElementById("count").innerHTML = document.getElementById("count").innerHTML + 1;
+	document.getElementById("countNum").innerHTML = document.getElementById("count").innerHTML.length;
+	test();
+
+	}
+     else
+     {
+     document.getElementById("message").innerHTML =  "Wrong! Try again`" ;
+	 document.getElementById("count2").innerHTML = document.getElementById("count2").innerHTML + 1;
+	 	document.getElementById("countNum2").innerHTML = document.getElementById("count2").innerHTML.length;
+	  speak("wrong");
+  }
+}
+
+
+function test() {
+
+document.getElementById("text").innerHTML = "Next";
+
+
+var ranNum;
+var x = document.getElementById("char").childElementCount;
+
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("char").selectedIndex = ranNum;
+
+document.getElementById("explain").selectedIndex = ranNum;
+
+
+
+ document.getElementById("a2").innerHTML = document.getElementById("char").value;
+
+answer =  document.getElementById("explain")[ranNum].value ; 
+
+listen();
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("q1").innerHTML = document.getElementById("explain")[ranNum].value;
+
+
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("q2").innerHTML = document.getElementById("explain")[ranNum].value;
+
+
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("q3").innerHTML = document.getElementById("explain")[ranNum].value;
+
+
+ranNum = Math.floor(Math.random() * 3); 
+
+
+
+  var fruits = ranNum;
+  
+
+  
+  switch(fruits) {
+    case 0:
+      document.getElementById("q1").innerHTML = answer;
+    break;
+    case 1:
+      document.getElementById("q2").innerHTML = answer;
+    break;
+    case 2:
+      document.getElementById("q3").innerHTML = answer;
+    break;
+    default:
+      document.getElementById("q1").innerHTML = answer;
+  }
+
+  
+
+ document.getElementById("hide").style.display = "inline";  
+document.getElementById("hide0").style.display = "inline";  
+document.getElementById("text2").style.display = "inline";  
+
+
+
+}
+
+
+
+</script>

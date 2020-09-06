@@ -1,0 +1,530 @@
+<html>
+
+<head>
+
+<style>
+
+span, button, td {
+
+font-size:25pt;
+}
+
+
+</style>
+</head>
+<body>
+<P align=left><A href=quiz.html><strong>Quiz HOME</strong></A>
+<center>
+<P><select type=text id=char style="display:none">
+
+<option name=c1 value="了解">了解</option>
+<option name=c2 value="内外">内外</option>
+<option name=c3 value="预报">预报</option>
+<option name=c4 value="情况">情况</option>
+<option name=c5 value="观众">观众</option>
+<option name=c6 value="播放">播放</option>
+<option name=c7 value="换成">换成</option>
+<option name=c8 value="方言">方言</option>
+<option name=c9 value="投篮">投篮</option>
+<option name=c10 value="手掌">手掌</option>
+<option name=c11 value="疲倦">疲倦</option>
+<option name=c12 value="建议">建议</option>
+<option name=c13 value="舞蹈">舞蹈</option>
+<option name=c14 value="秘密">秘密</option>
+<option name=c15 value="苹果">苹果</option>
+<option name=c16 value="词语">词语</option>
+<option name=c17 value="鱼丸">鱼丸</option>
+<option name=c18 value="小鼓">小鼓</option>
+<option name=c19 value="帽子">帽子</option>
+<option name=c20 value="外套">外套</option>
+<option name=c21 value="姑姑">姑姑</option>
+<option name=c22 value="暖暖">暖暖</option>
+<option name=c23 value="表示">表示</option>
+<option name=c24 value="忽然">忽然</option>
+<option name=c25 value="撑着">撑着</option>
+<option name=c26 value="担心">担心</option>
+<option name=c27 value="尊敬">尊敬</option>
+<option name=c28 value="长辈">长辈</option>
+<option name=c29 value="警察">警察</option>
+<option name=c30 value="后悔">后悔</option>
+<option name=c31 value="模型">模型</option>
+<option name=c32 value="叫醒">叫醒</option>
+<option name=c33 value="睁开">睁开</option>
+<option name=c34 value="补习">补习</option>
+<option name=c35 value="眼泪">眼泪</option>
+<option name=c36 value="批评">批评</option>
+<option name=c37 value="值日">值日</option>
+<option name=c38 value="负责">负责</option>
+<option name=c39 value="风扇">风扇</option>
+<option name=c40 value="归还">归还</option>
+<option name=c41 value="插队">插队</option>
+<option name=c42 value="阅读">阅读</option>
+<option name=c43 value="玩耍">玩耍</option>
+<option name=c44 value="劝告">劝告</option>
+<option name=c45 value="注意">注意</option>
+<option name=c46 value="保证">保证</option>
+<option name=c47 value="皱着">皱着</option>
+<option name=c48 value="眉头">眉头</option>
+<option name=c49 value="默默">默默</option>
+<option name=c50 value="由于">由于</option>
+<option name=c51 value="纷纷">纷纷</option>
+<option name=c52 value="赞许">赞许</option>
+<option name=c53 value="体育">体育</option>
+<option name=c54 value="继续">继续</option>
+<option name=c55 value="发烧">发烧</option>
+<option name=c56 value="洗澡">洗澡</option>
+<option name=c57 value="项目">项目</option>
+<option name=c58 value="微笑">微笑</option>
+<option name=c59 value="勇敢">勇敢</option>
+<option name=c60 value="功夫">功夫</option>
+<option name=c61 value="华族">华族</option>
+<option name=c62 value="训练">训练</option>
+<option name=c63 value="握着">握着</option>
+<option name=c64 value="鼓励">鼓励</option>
+<option name=c65 value="丰富">丰富</option>
+<option name=c66 value="辛苦">辛苦</option>
+<option name=c67 value="放弃">放弃</option>
+<option name=c68 value="坚持">坚持</option>
+<option name=c69 value="登上">登上</option>
+<option name=c70 value="幸运">幸运</option>
+<option name=c71 value="孕妇">孕妇</option>
+<option name=c72 value="车厢">车厢</option>
+<option name=c73 value="乘客">乘客</option>
+<option name=c74 value="随手">随手</option>
+<option name=c75 value="节约">节约</option>
+<option name=c76 value="道歉">道歉</option>
+<option name=c77 value="舅舅">舅舅</option>
+<option name=c78 value="移动">移动</option>
+<option name=c79 value="拼命">拼命</option>
+<option name=c80 value="终于">终于</option>
+<option name=c81 value="秩序">秩序</option>
+<option name=c82 value="耐心">耐心</option>
+<option name=c83 value="等待">等待</option>
+<option name=c84 value="悄悄">悄悄</option>
+<option name=c85 value="危险">危险</option>
+<option name=c86 value="遵守">遵守</option>
+<option name=c87 value="交通">交通</option>
+<option name=c88 value="规则">规则</option>
+<option name=c89 value="车祸">车祸</option>
+<option name=c90 value="指挥">指挥</option>
+<option name=c91 value="巨大">巨大</option>
+<option name=c92 value="到达">到达</option>
+<option name=c93 value="顺利">顺利</option>
+<option name=c94 value="采访">采访</option>
+<option name=c95 value="标题">标题</option>
+<option name=c96 value="获得">获得</option>
+<option name=c97 value="表扬">表扬</option>
+<option name=c98 value="盲道">盲道</option>
+<option name=c99 value="居民">居民</option>
+<option name=c100 value="提供">提供</option>
+<option name=c101 value="水沟">水沟</option>
+<option name=c102 value="饮料">饮料</option>
+<option name=c103 value="摊位">摊位</option>
+<option name=c104 value="讨厌">讨厌</option>
+<option name=c105 value="一般">一般</option>
+<option name=c106 value="其中">其中</option>
+<option name=c107 value="辣味">辣味</option>
+<option name=c108 value="清楚">清楚</option>
+<option name=c109 value="依然">依然</option>
+<option name=c110 value="而是">而是</option>
+<option name=c111 value="米粉">米粉</option>
+<option name=c112 value="不管">不管</option>
+<option name=c113 value="帮助">帮助</option>
+<option name=c114 value="无礼">无礼</option>
+<option name=c115 value="玩耍">玩耍</option>
+<option name=c116 value="推开">推开</option>
+<option name=c117 value="教室">教室</option>
+<option name=c118 value="乐曲">乐曲</option>
+<option name=c119 value="举着">举着</option>
+<option name=c120 value="指令">指令</option>
+<option name=c121 value="选手">选手</option>
+<option name=c122 value="年级">年级</option>
+<option name=c123 value="取得">取得</option>
+<option name=c124 value="南边">南边</option>
+<option name=c125 value="北边">北边</option>
+<option name=c126 value="展览">展览</option>
+<option name=c127 value="热烈">热烈</option>
+<option name=c128 value="旅游">旅游</option>
+<option name=c129 value="介绍">介绍</option>
+<option name=c130 value="景点">景点</option>
+<option name=c131 value="士兵">士兵</option>
+<option name=c132 value="排列">排列</option>
+<option name=c133 value="喷泉">喷泉</option>
+<option name=c134 value="宾客">宾客</option>
+<option name=c135 value="欣赏">欣赏</option>
+<option name=c136 value="充实">充实</option>
+<option name=c137 value="顺着">顺着</option>
+<option name=c138 value="组屋">组屋</option>
+<option name=c139 value="商店">商店</option>
+<option name=c140 value="假期">假期</option>
+<option name=c141 value="传来">传来</option>
+<option name=c142 value="握手">握手</option>
+<option name=c143 value="人群">人群</option>
+<option name=c144 value="突然">突然</option>
+<option name=c145 value="男孩">男孩</option>
+<option name=c146 value="许多">许多</option>
+<option name=c147 value="宝贝">宝贝</option>
+<option name=c148 value="特别">特别</option>
+<option name=c149 value="摸着">摸着</option>
+<option name=c150 value="立刻">立刻</option>
+<option name=c151 value="词典">词典</option>
+<option name=c152 value="挥动">挥动</option>
+<option name=c153 value="可怜">可怜</option>
+<option name=c154 value="睁大">睁大</option>
+<option name=c155 value="舒服">舒服</option>
+<option name=c156 value="炎热">炎热</option>
+<option name=c157 value="刮风">刮风</option>
+<option name=c158 value="花展">花展</option>
+<option name=c159 value="参观">参观</option>
+<option name=c160 value="碰上">碰上</option>
+<option name=c161 value="邮包">邮包</option>
+<option name=c162 value="邮票">邮票</option>
+<option name=c163 value="游泳">游泳</option>
+<option name=c164 value="希望">希望</option>
+<option name=c165 value="快速">快速</option>
+<option name=c166 value="漂亮">漂亮</option>
+<option name=c167 value="惊奇">惊奇</option>
+<option name=c168 value="树枝">树枝</option>
+
+
+</select>
+
+<P><select type=text id=explain style="display:none">
+
+<option name=c1 value="to understand; to realize; to find out">to understand; to realize; to find out</option>
+<option name=c2 value="inside and outside; domestic and foreign; approximately; about">inside and outside; domestic and foreign; approximately; about</option>
+<option name=c3 value="forecast">forecast</option>
+<option name=c4 value="circumstances; state of affairs; situation">circumstances; state of affairs; situation</option>
+<option name=c5 value="spectators; audience; visitors (to an exhibition etc)">spectators; audience; visitors (to an exhibition etc)</option>
+<option name=c6 value="to broadcast; to transmit">to broadcast; to transmit</option>
+<option name=c7 value="to exchange (sth) for (sth else); to replace with; to convert into">to exchange (sth) for (sth else); to replace with; to convert into</option>
+<option name=c8 value="dialect">dialect</option>
+<option name=c9 value="to throw at a basket; to shoot (in soccer, basketball etc)">to throw at a basket; to shoot (in soccer, basketball etc)</option>
+<option name=c10 value="palm">palm</option>
+<option name=c11 value="to tire; tired">to tire; tired</option>
+<option name=c12 value="to propose; to suggest; to recommend; proposal; suggestion; recommendation">to propose; to suggest; to recommend; proposal; suggestion; recommendation</option>
+<option name=c13 value="dance">dance</option>
+<option name=c14 value="secret">secret</option>
+<option name=c15 value="apple">apple</option>
+<option name=c16 value="word (general term including monosyllables through to short phrases); term (e.g. technical term); expression">word (general term including monosyllables through to short phrases); term (e.g. technical term); expression</option>
+<option name=c17 value="fish ball">fish ball</option>
+<option name=c18 value="bongo; small drum">bongo; small drum</option>
+<option name=c19 value="hat; cap; (fig.) label; bad name">hat; cap; (fig.) label; bad name</option>
+<option name=c20 value="coat">coat</option>
+<option name=c21 value="paternal aunt">paternal aunt</option>
+<option name=c22 value="Nuannuan district of Keelung City 基隆市, Taiwan">Nuannuan district of Keelung City 基隆市, Taiwan</option>
+<option name=c23 value="to express; to show; to say; to state; to indicate; to mean">to express; to show; to say; to state; to indicate; to mean</option>
+<option name=c24 value="suddenly; all of a sudden">suddenly; all of a sudden</option>
+<option name=c25 value="hold on">hold on</option>
+<option name=c26 value="anxious; worried; uneasy; to worry; to be anxious">anxious; worried; uneasy; to worry; to be anxious</option>
+<option name=c27 value="respect; to revere">respect; to revere</option>
+<option name=c28 value="one's elders; older generation">one's elders; older generation</option>
+<option name=c29 value="police; police officer">police; police officer</option>
+<option name=c30 value="to regret; to repent">to regret; to repent</option>
+<option name=c31 value="model; mould; matrix; pattern">model; mould; matrix; pattern</option>
+<option name=c32 value="to awaken; to wake sb up; to rouse">to awaken; to wake sb up; to rouse</option>
+<option name=c33 value="to open the eyes">to open the eyes</option>
+<option name=c34 value="to take extra lessons; to cram (for a test)">to take extra lessons; to cram (for a test)</option>
+<option name=c35 value="tears; crying">tears; crying</option>
+<option name=c36 value="to criticize; criticism">to criticize; criticism</option>
+<option name=c37 value="on day duty">on day duty</option>
+<option name=c38 value="to be in charge of; to take responsibility for; to be to blame; conscientious">to be in charge of; to take responsibility for; to be to blame; conscientious</option>
+<option name=c39 value="fan">fan</option>
+<option name=c40 value="to return sth; to revert">to return sth; to revert</option>
+<option name=c41 value="to cut in line; to jump a queue; to live on a rural community (during the Cultural Revolution)">to cut in line; to jump a queue; to live on a rural community (during the Cultural Revolution)</option>
+<option name=c42 value="to read; reading">to read; reading</option>
+<option name=c43 value="to enjoy oneself; an entertainment; to play (of children)">to enjoy oneself; an entertainment; to play (of children)</option>
+<option name=c44 value="to advise; to urge; to exhort; exhortation; advice">to advise; to urge; to exhort; exhortation; advice</option>
+<option name=c45 value="to take note of; to pay attention to">to take note of; to pay attention to</option>
+<option name=c46 value="guarantee; to guarantee; to ensure; to safeguard; to pledge">guarantee; to guarantee; to ensure; to safeguard; to pledge</option>
+<option name=c47 value="wrinkled">wrinkled</option>
+<option name=c48 value="brows">brows</option>
+<option name=c49 value="in silence; not speaking">in silence; not speaking</option>
+<option name=c50 value="due to; as a result of; thanks to; owing to; since; because">due to; as a result of; thanks to; owing to; since; because</option>
+<option name=c51 value="one after another; in succession; one by one; continuously; diverse; in profusion; numerous and confused; pell-mell">one after another; in succession; one by one; continuously; diverse; in profusion; numerous and confused; pell-mell</option>
+<option name=c52 value="to praise; to laud">to praise; to laud</option>
+<option name=c53 value="sports; physical education">sports; physical education</option>
+<option name=c54 value="to continue; to proceed with; to go on with">to continue; to proceed with; to go on with</option>
+<option name=c55 value="to have a high temperature (from illness); to have a fever">to have a high temperature (from illness); to have a fever</option>
+<option name=c56 value="to bathe; to take a shower">to bathe; to take a shower</option>
+<option name=c57 value="item; project; sports event">item; project; sports event</option>
+<option name=c58 value="smile; to smile">smile; to smile</option>
+<option name=c59 value="brave; courageous">brave; courageous</option>
+<option name=c60 value="skill; art; kung fu; labor; effort">skill; art; kung fu; labor; effort</option>
+<option name=c61 value="noble family; of Chinese ancestry">noble family; of Chinese ancestry</option>
+<option name=c62 value="to train; to drill; training">to train; to drill; training</option>
+<option name=c63 value="holding">holding</option>
+<option name=c64 value="to encourage">to encourage</option>
+<option name=c65 value="to enrich; rich; plentiful; abundant">to enrich; rich; plentiful; abundant</option>
+<option name=c66 value="hard; exhausting; with much toil; thanks for your trouble">hard; exhausting; with much toil; thanks for your trouble</option>
+<option name=c67 value="to renounce; to abandon; to give up">to renounce; to abandon; to give up</option>
+<option name=c68 value="to persevere with; to persist in; to insist on">to persevere with; to persist in; to insist on</option>
+<option name=c69 value="to climb over; to ascend onto; to mount">to climb over; to ascend onto; to mount</option>
+<option name=c70 value="fortunate; lucky; fortune; luck">fortunate; lucky; fortune; luck</option>
+<option name=c71 value="pregnant woman">pregnant woman</option>
+<option name=c72 value="carriage">carriage</option>
+<option name=c73 value="passenger">passenger</option>
+<option name=c74 value="conveniently; without extra trouble; while doing it; in passing">conveniently; without extra trouble; while doing it; in passing</option>
+<option name=c75 value="to economize; to conserve (resources); economy; frugal">to economize; to conserve (resources); economy; frugal</option>
+<option name=c76 value="to apologize">to apologize</option>
+<option name=c77 value="mother's brother; maternal uncle (informal)">mother's brother; maternal uncle (informal)</option>
+<option name=c78 value="to move; movement; migration; mobile; portable">to move; movement; migration; mobile; portable</option>
+<option name=c79 value="to do one's utmost; with all one's might; at all costs; (to work or fight) as if one's life depends on it">to do one's utmost; with all one's might; at all costs; (to work or fight) as if one's life depends on it</option>
+<option name=c80 value="at last; in the end; finally; eventually">at last; in the end; finally; eventually</option>
+<option name=c81 value="order (orderly); order (sequence); social order; the state (of society)">order (orderly); order (sequence); social order; the state (of society)</option>
+<option name=c82 value="to be patient; patience">to be patient; patience</option>
+<option name=c83 value="to wait; to wait for">to wait; to wait for</option>
+<option name=c84 value="quietly; secretly; stealthily; quiet; worried; Taiwan pr. [qiao3 qiao3]">quietly; secretly; stealthily; quiet; worried; Taiwan pr. [qiao3 qiao3]</option>
+<option name=c85 value="danger; dangerous">danger; dangerous</option>
+<option name=c86 value="to comply with; to abide by; to respect (an agreement)">to comply with; to abide by; to respect (an agreement)</option>
+<option name=c87 value="to be connected; traffic; transportation; communications; liaison">to be connected; traffic; transportation; communications; liaison</option>
+<option name=c88 value="rule; regulation; rules and regulations">rule; regulation; rules and regulations</option>
+<option name=c89 value="traffic accident; car crash">traffic accident; car crash</option>
+<option name=c90 value="to conduct; to command; to direct; conductor (of an orchestra)">to conduct; to command; to direct; conductor (of an orchestra)</option>
+<option name=c91 value="huge; immense; very large; tremendous; gigantic; enormous">huge; immense; very large; tremendous; gigantic; enormous</option>
+<option name=c92 value="to reach; to arrive">to reach; to arrive</option>
+<option name=c93 value="smoothly; without a hitch">smoothly; without a hitch</option>
+<option name=c94 value="to interview; to gather news; to hunt for and collect; to cover">to interview; to gather news; to hunt for and collect; to cover</option>
+<option name=c95 value="title; heading; headline; caption; subject">title; heading; headline; caption; subject</option>
+<option name=c96 value="to obtain; to receive; to get">to obtain; to receive; to get</option>
+<option name=c97 value="to praise; to commend">to praise; to commend</option>
+<option name=c98 value="blind pat">blind pat</option>
+<option name=c99 value="resident; inhabitant">resident; inhabitant</option>
+<option name=c100 value="to offer; to supply; to provide; to furnish">to offer; to supply; to provide; to furnish</option>
+<option name=c101 value="gutter; sewer">gutter; sewer</option>
+<option name=c102 value="drink; beverage">drink; beverage</option>
+<option name=c103 value="vendor's booth">vendor's booth</option>
+<option name=c104 value="to dislike; to loathe; disagreeable; troublesome; annoying">to dislike; to loathe; disagreeable; troublesome; annoying</option>
+<option name=c105 value="same; ordinary; so-so; common; general; generally; in general">same; ordinary; so-so; common; general; generally; in general</option>
+<option name=c106 value="among; in; included among these">among; in; included among these</option>
+<option name=c107 value="spicy">spicy</option>
+<option name=c108 value="clear; distinct; to understand thoroughly; to be clear about">clear; distinct; to understand thoroughly; to be clear about</option>
+<option name=c109 value="still; as before">still; as before</option>
+<option name=c110 value="rather">rather</option>
+<option name=c111 value="rice vermicelli">rice vermicelli</option>
+<option name=c112 value="no matter (what, how); regardless of; no matter">no matter (what, how); regardless of; no matter</option>
+<option name=c113 value="assistance; aid; to help; to assist">assistance; aid; to help; to assist</option>
+<option name=c114 value="rude; rudely">rude; rudely</option>
+<option name=c115 value="to enjoy oneself; an entertainment; to play (of children)">to enjoy oneself; an entertainment; to play (of children)</option>
+<option name=c116 value="to push open (a gate etc); to push away; to reject; to decline">to push open (a gate etc); to push away; to reject; to decline</option>
+<option name=c117 value="classroom">classroom</option>
+<option name=c118 value="musical composition">musical composition</option>
+<option name=c119 value="holding">holding</option>
+<option name=c120 value="order; command; instruction">order; command; instruction</option>
+<option name=c121 value="athlete; contestant">athlete; contestant</option>
+<option name=c122 value="grade">grade</option>
+<option name=c123 value="to acquire; to get; to obtain">to acquire; to get; to obtain</option>
+<option name=c124 value="south; south side; southern part; to the south of">south; south side; southern part; to the south of</option>
+<option name=c125 value="north; north side; northern part; to the north of">north; north side; northern part; to the north of</option>
+<option name=c126 value="to put on display; to exhibit; exhibition; show">to put on display; to exhibit; exhibition; show</option>
+<option name=c127 value="enthusiastic; ardent; warm">enthusiastic; ardent; warm</option>
+<option name=c128 value="trip; journey; tourism; travel; tour; to travel">trip; journey; tourism; travel; tour; to travel</option>
+<option name=c129 value="to introduce (sb to sb); to give a presentation; to present (sb for a job etc); introduction">to introduce (sb to sb); to give a presentation; to present (sb for a job etc); introduction</option>
+<option name=c130 value="scenic spot; place of interest (tourism)">scenic spot; place of interest (tourism)</option>
+<option name=c131 value="soldier">soldier</option>
+<option name=c132 value="array; arrangement; permutation (i.e. ordered choice of n elements out of m)">array; arrangement; permutation (i.e. ordered choice of n elements out of m)</option>
+<option name=c133 value="fountain">fountain</option>
+<option name=c134 value="guests; visitors">guests; visitors</option>
+<option name=c135 value="to appreciate; to enjoy; to admire">to appreciate; to enjoy; to admire</option>
+<option name=c136 value="rich; full; substantial; to enrich; to augment; to substantiate (an argument)">rich; full; substantial; to enrich; to augment; to substantiate (an argument)</option>
+<option name=c137 value="to follow; following; along">to follow; following; along</option>
+<option name=c138 value="HDB flats; public apartment flats (in Singapore and Malaysia)">HDB flats; public apartment flats (in Singapore and Malaysia)</option>
+<option name=c139 value="store; shop">store; shop</option>
+<option name=c140 value="vacation">vacation</option>
+<option name=c141 value="(of a sound) to come through; to be heard; (of news) to arrive">(of a sound) to come through; to be heard; (of news) to arrive</option>
+<option name=c142 value="to shake hands">to shake hands</option>
+<option name=c143 value="crowd">crowd</option>
+<option name=c144 value="sudden; abrupt; unexpected">sudden; abrupt; unexpected</option>
+<option name=c145 value="boy">boy</option>
+<option name=c146 value="many; a lot of; much">many; a lot of; much</option>
+<option name=c147 value="treasured object; treasure; darling; baby; cowry; good-for-nothing or queer character">treasured object; treasure; darling; baby; cowry; good-for-nothing or queer character</option>
+<option name=c148 value="especially; special; particular; unusual">especially; special; particular; unusual</option>
+<option name=c149 value="touching something">touching something</option>
+<option name=c150 value="forthwith; immediate; prompt; promptly; straightway; thereupon; at once">forthwith; immediate; prompt; promptly; straightway; thereupon; at once</option>
+<option name=c151 value="dictionary (of Chinese compound words); also written 辞典">dictionary (of Chinese compound words); also written 辞典</option>
+<option name=c152 value="to wave sth; to brandish">to wave sth; to brandish</option>
+<option name=c153 value="pitiful; pathetic; to have pity on">pitiful; pathetic; to have pity on</option>
+<option name=c154 value="open eyes widely">open eyes widely</option>
+<option name=c155 value="comfortable; feeling well">comfortable; feeling well</option>
+<option name=c156 value="blistering hot; sizzling hot (weather)">blistering hot; sizzling hot (weather)</option>
+<option name=c157 value="to be windy">to be windy</option>
+<option name=c158 value="flower show">flower show</option>
+<option name=c159 value="to look around; to tour; to visit">to look around; to tour; to visit</option>
+<option name=c160 value="hit; come across">hit; come across</option>
+<option name=c161 value="postal parcel; parcel">postal parcel; parcel</option>
+<option name=c162 value="(postage) stamp">(postage) stamp</option>
+<option name=c163 value="swimming; to swim">swimming; to swim</option>
+<option name=c164 value="to wish for; to desire; hope">to wish for; to desire; hope</option>
+<option name=c165 value="fast; high-speed; rapid">fast; high-speed; rapid</option>
+<option name=c166 value="pretty; beautiful">pretty; beautiful</option>
+<option name=c167 value="to be amazed; to be surprised; to wonder">to be amazed; to be surprised; to wonder</option>
+<option name=c168 value="branch; twig">branch; twig</option>
+
+
+
+</select>	
+<button id=text onclick="test()" >Try</button>
+<P>
+	<Table id=hide0 border=0 style="display:none">	
+	<TR>
+<TD>Number of Correct Attempts : <span id=count style="display:none"></span><span id=countNum></span>
+<TR>
+<TD>Number of Wrong Attempts : <span id=count2 style="display:none"></span><span id=countNum2></span>
+</Table>		
+		<P>
+		<span id=answer></span>
+		</P>
+		<P>
+		<span id=message></span>
+		</P>
+		
+		
+	
+	<button id=text2 onclick="listen()" style="display:none"><img src=sound.png height=100pt width=100pt></button>
+	<P>
+	<Table id=hide border=0 width=80% height=50 cellspacing=10 style="display:none">
+	
+	<TR>
+	<TD  width=200 height=100 align=center  ><span id="a1" >word : </TD>
+	<TD colspan=2 width=400 height=100 align=left ><span id="a2" ></TD>
+	
+	
+	
+	<TR>
+	<TD bgcolor=yellow width=20% height=100 align=center onclick="myFunction('q1')" ><span id="q1" ></TD>
+	<TD bgcolor=yellow width=20% height=100 align=center onclick="myFunction('q2')"><span id="q2" ></TD>
+	<TD bgcolor=yellow width=20% height=100 align=center onclick="myFunction('q3')"><span id="q3" ></TD>
+	
+
+	</Table>
+    
+
+</div>
+</body>
+</html>
+<script>
+
+	
+function listen() {
+ 
+ var msg1 = document.getElementById("char").value;
+  var msg = new SpeechSynthesisUtterance(msg1);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[49];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[18];
+	}
+  	
+  window.speechSynthesis.speak(msg);
+
+}
+	
+function speak(msg1) {
+ 
+ 
+  var msg = new SpeechSynthesisUtterance(msg1);
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[17];
+  var platform = navigator.platform ;
+	if ( platform == "Win32") {
+	 msg.voice = voices[0];
+	}
+  window.speechSynthesis.speak(msg);
+
+}
+
+
+
+function myFunction(q) {
+  
+  if (document.getElementById("explain").value ==  document.getElementById(q).innerHTML)
+  {
+     document.getElementById("message").innerHTML =  "correct" ;
+	  speak("Correct");
+	document.getElementById("count").innerHTML = document.getElementById("count").innerHTML + 1;
+	document.getElementById("countNum").innerHTML = document.getElementById("count").innerHTML.length;
+	test();
+
+	}
+     else
+     {
+     document.getElementById("message").innerHTML =  "Wrong! Try again`" ;
+	 document.getElementById("count2").innerHTML = document.getElementById("count2").innerHTML + 1;
+	 	document.getElementById("countNum2").innerHTML = document.getElementById("count2").innerHTML.length;
+	  speak("wrong");
+  }
+}
+
+
+function test() {
+
+document.getElementById("text").innerHTML = "Next";
+
+
+var ranNum;
+var x = document.getElementById("char").childElementCount;
+
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("char").selectedIndex = ranNum;
+
+document.getElementById("explain").selectedIndex = ranNum;
+
+
+
+ document.getElementById("a2").innerHTML = document.getElementById("char").value;
+
+answer =  document.getElementById("explain")[ranNum].value ; 
+
+listen();
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("q1").innerHTML = document.getElementById("explain")[ranNum].value;
+
+
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("q2").innerHTML = document.getElementById("explain")[ranNum].value;
+
+
+ranNum = Math.floor(Math.random() * x); 
+
+document.getElementById("q3").innerHTML = document.getElementById("explain")[ranNum].value;
+
+
+ranNum = Math.floor(Math.random() * 3); 
+
+
+
+  var fruits = ranNum;
+  
+
+  
+  switch(fruits) {
+    case 0:
+      document.getElementById("q1").innerHTML = answer;
+    break;
+    case 1:
+      document.getElementById("q2").innerHTML = answer;
+    break;
+    case 2:
+      document.getElementById("q3").innerHTML = answer;
+    break;
+    default:
+      document.getElementById("q1").innerHTML = answer;
+  }
+
+  
+
+ document.getElementById("hide").style.display = "inline";  
+document.getElementById("hide0").style.display = "inline";  
+document.getElementById("text2").style.display = "inline";  
+
+
+
+}
+
+
+
+</script>
