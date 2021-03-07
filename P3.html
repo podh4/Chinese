@@ -514,11 +514,11 @@ function listen() {
  
  var msg1 = document.getElementById("char").value;
   var msg = new SpeechSynthesisUtterance(msg1);
-  var voices = window.speechSynthesis.getVoices();
+  var voices = speechSynthesis.getVoices();
   
  
   msg.lang = 'zh-CN';	
-  window.speechSynthesis.speak(msg);
+  speechSynthesis.speak(msg);
 
 }
 	
@@ -526,10 +526,10 @@ function speak(msg1) {
  
  
   var msg = new SpeechSynthesisUtterance(msg1);
-  var voices = window.speechSynthesis.getVoices();
+  var voices = speechSynthesis.getVoices();
   msg.lang = 'en-US';	
 
-  window.speechSynthesis.speak(msg);
+  speechSynthesis.speak(msg);
 
 }
 
