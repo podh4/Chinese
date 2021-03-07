@@ -13,7 +13,7 @@ font-size:25pt;
 </style>
 </head>
 <body>
-<P align=left><A href=quiz.html><strong>Quiz HOME</strong></A>
+<P align=left><A href=index.html><strong>HOME</strong></A>
 <center>
 <P><select type=text id=char style="display:none">
 
@@ -515,12 +515,9 @@ function listen() {
  var msg1 = document.getElementById("char").value;
   var msg = new SpeechSynthesisUtterance(msg1);
   var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[49];
-  var platform = navigator.platform ;
-	if ( platform == "Win32") {
-	 msg.voice = voices[18];
-	}
-  	
+  
+ 
+  msg.lang = 'zh-CN';	
   window.speechSynthesis.speak(msg);
 
 }
@@ -530,11 +527,8 @@ function speak(msg1) {
  
   var msg = new SpeechSynthesisUtterance(msg1);
   var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[17];
-  var platform = navigator.platform ;
-	if ( platform == "Win32") {
-	 msg.voice = voices[0];
-	}
+  msg.lang = 'en-US';	
+
   window.speechSynthesis.speak(msg);
 
 }
