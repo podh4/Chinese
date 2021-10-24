@@ -523,10 +523,12 @@ function listen() {
 	
 function speak(msg1) {
  
- 
   var msg = new SpeechSynthesisUtterance(msg1);
-
+ 
+ 
+  msg.lang = 'zh-CN';	
   window.speechSynthesis.speak(msg);
+
 
 }
 
