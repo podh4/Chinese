@@ -48,14 +48,10 @@ function listen(q) {
   str = decodeHtml(msg1);
   
   var msg = new SpeechSynthesisUtterance(str);
-  var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[49];
-  var platform = navigator.platform ;
-	if ( platform == "Win32") {
-	 msg.voice = voices[18];
-	}
-  	
-  window.speechSynthesis.speak(msg);
+  
+msg.lang = 'zh-CN';	
+window.speechSynthesis.speak(msg);
+
 
 }
 
